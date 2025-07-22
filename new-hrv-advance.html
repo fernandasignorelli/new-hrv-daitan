@@ -1,77 +1,64 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WW6LLMBQ');</script>
-    <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WW6LLMBQ');</script>
+<!-- End Google Tag Manager -->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HRV ADVANCE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>HRV ADVANCE</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css?v=0.30">
-    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css?v=0.30">
-    <link rel="stylesheet" href="/lib/vertical-responsive/css/easy-responsive-tabs.css?v=0.30">
-    <link rel="stylesheet" href="/css/style.css?v=0.30">
-    <!--<link rel="stylesheet" href="/lib/flickity/flickity.css?v=0.30">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/lib/gallery/gallery.css?v=0.30">
-    <link rel="stylesheet" href="/lib/slick/slick.css?v=0.30">
+<link rel="stylesheet" href="/css/bootstrap.min.css?v=0.30">
+<link rel="stylesheet" href="/lib/fontawesome/css/all.min.css?v=0.30">
+<link rel="stylesheet" href="/lib/vertical-responsive/css/easy-responsive-tabs.css?v=0.30">
+<link rel="stylesheet" href="/css/style.css?v=0.30">
+<!--<link rel="stylesheet" href="/lib/flickity/flickity.css?v=0.30">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+<link rel="stylesheet" href="/lib/gallery/gallery.css?v=0.30">
+<link rel="stylesheet" href="/lib/slick/slick.css?v=0.30">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/v-money-customized@0.0.1/dist/v-money.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/maska@1.5.1/dist/maska.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/v-money-customized@0.0.1/dist/v-money.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/maska@1.5.1/dist/maska.js"></script>
 
-    <script>
-        const api = axios.create({ baseURL: '/v1/api/' });
-        const apiVagas = axios.create({ baseURL: 'https://servicos.empresasremaza.com.br/api/vagas/' });
-        const baseURL = window.location.protocol + "//" + window.location.host;
-    </script>
+<script>
+    const api = axios.create({ baseURL: '/v1/api/' });
+    const apiVagas = axios.create({ baseURL: 'https://servicos.empresasremaza.com.br/api/vagas/' });
+    const baseURL = window.location.protocol + "//" + window.location.host;
+</script>
 
-    <!--<script src="https://cdn.jsdelivr.net/npm/@microsoft/azsearch.js@0.0.21/dist/AzSearch.bundle.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@microsoft/azsearch.js@0.0.21/dist/AzSearch.bundle.js"></script>-->
 
-
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="Honda Daitan - A maior concessionária Honda do Brasil">
-    <meta name="generator" content="Piranha CMS 10.3.0">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="New HR-V Touring | Honda Daitan - A maior concessionária Honda do Brasil">
-    <meta property="og:description" content="Honda Daitan - A maior concessionária Honda do Brasil">
-
-
-</head>
+<meta name="robots" content="index,follow">
+<meta name="description" content="Honda Daitan - A maior concessionária Honda do Brasil">
+<meta name="generator" content="Piranha CMS 10.3.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="New HR-V Touring | Honda Daitan - A maior concessionária Honda do Brasil">
+<meta property="og:description" content="Honda Daitan - A maior concessionária Honda do Brasil">
 
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW6LLMBQ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <header>
-        <div id="regiao"></div>
-        <script src="/vuejs/regiao.js?v=1.2"></script>
-
-        <div id="dvheader"></div>
-    </header>
-
 
     <script>
         function fn_noticias_home() {
@@ -332,7 +319,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/advance/hrv-advance-preto-cristal-persolizado-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-preto-cristal-perolizado-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Preto Cristal Perolizado</p>
@@ -355,11 +342,11 @@
                             <p><b><i>Diferenciais do New HR-V Advance</i></b></p>
 
                             <ul class="versao-list">
-                                <li>Novo motor 1.5L VTEC Turbo Flex com injeção direta de 177cv</li>
+                                <li>Novo Design - Rodas Liga leve - aro 18”</li>
+                                <li>Motor 1.5 DI VTEC Turbo Flex com injeção direta de 177cv</li>
                                 <li>Honda Sensing - Pacote de segurança e assistência ao condutor</li>
                                 <li>myHonda Connect - Conexão única entre você e seu Honda</li>
                                 <li>Carregador por indução para smartphones</li>
-                                <li>TFT Digital de 7"</li>
                                 <li>Ar-condicionado digital dual zone com efeito brisa</li>
                             </ul>
 
@@ -1238,7 +1225,7 @@
                                         <li>Tração dianteira</li>
                                         <li>Suspensão dianteira MacPherson</li>
                                         <li>Suspensão traseira - Barra de torção</li>
-                                        <li>Rodas (pol) - Liga leve - aro 17"</li>
+                                        <li>Novo Design - Rodas (pol) - Liga leve - aro 18"</li>
                                         <li>Pneus 215/60R17 96H</li>
                                         <li>Estepe temporário T145 / 90 R16</li>
                                     </ul>
@@ -1377,7 +1364,8 @@
                                         <li>Banco traseiro Bipartido (60/40) Com exclusiva tecnologia Magic Seat</li>
                                         <li>Volante e alavanca do câmbio revestidos em couro*</li>
                                         <li>Acabamento do volante em Black Piano - Comandos</li>
-                                        <li>Revestimento dos bancos - couro na cor Preta ou Cinza Claro</li>
+                                        <li>Revestimento dos bancos - couro na cor Preta ou Cinza Claro (A depender da
+                                            cor externa)</li>
                                         <li>Bancos com Estabilizador Corporal - Maior conforto e ergonomia</li>
                                         <li>Interface para smartphones Apple CarPlay e Android Auto com Voice Tag</li>
                                         <li>Alto-falantes - 4 alto-falantes + 2 Tweeters</li>
@@ -1390,6 +1378,7 @@
                                         <li>Inclinação automática de retrovisor ao engatar a ré</li>
                                         <li>Sensor de chuva</li>
                                         <li>myHonda Connect - Conexão única entre você e o seu Honda</li>
+                                        <li>Sensor de chuva</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1421,32 +1410,34 @@
                                         <li>Prata Platinum Metálico</li>
                                         <li>Azul Cósmico Metálico</li>
                                         <li>Cinza Basalto Metálico</li>
-                                        <li>Cinza Grafeno Perolizado</li>
+                                        <li>Cinza Titânio Perolizado</li>
                                         <li>Vermelho Mercúrio Perolizado</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-
-            <div class="container">
-                <div class="row mt-3">
-                    <p><small>A Honda Automóveis do Brasil reserva-se o direito de modificar equipamentos,
-                            especificações
-                            técnicas, preços ou cores sem prévia notificação. Garantia de 3 anos sem limite de
-                            quilometragem
-                            válida na rede de concessionárias Honda. Preço público sugerido em reais, com frete incluso,
-                            podendo variar de acordo com a tributação e alíquotas específicas de cada Estado (consulte
-                            uma
-                            concessionária para mais informações). Alguns itens são revestidos em couro e/ou materiais
-                            sintéticos de alta qualidade. *Apple CarPlay é uma marca comercial da Apple Inc. Android
-                            Auto é
-                            uma marca comercial da Google Inc.</small></p>
+                <div class="container">
+                    <div class="row mt-3">
+                        <p><small>A Honda Automóveis do Brasil reserva-se o direito de modificar equipamentos,
+                                especificações
+                                técnicas, preços ou cores sem prévia notificação. Garantia de 3 anos sem limite de
+                                quilometragem
+                                válida na rede de concessionárias Honda. Preço público sugerido em reais, com frete
+                                incluso,
+                                podendo variar de acordo com a tributação e alíquotas específicas de cada Estado
+                                (consulte
+                                uma
+                                concessionária para mais informações). Alguns itens são revestidos em couro e/ou
+                                materiais
+                                sintéticos de alta qualidade. *Apple CarPlay é uma marca comercial da Apple Inc. Android
+                                Auto é
+                                uma marca comercial da Google Inc.</small></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -1566,58 +1557,60 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <script>
-        // Atualiza o modal com a imagem e o caption corretos
-        $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
-            var imageSrc = $(this).attr('src');
-            var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
+<script>
+    // Atualiza o modal com a imagem e o caption corretos
+    $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
+        var imageSrc = $(this).attr('src');
+        var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
 
-            $('#modalImage').attr('src', imageSrc);
-            $('#modalCaption').html(captionHTML);
+        $('#modalImage').attr('src', imageSrc);
+        $('#modalCaption').html(captionHTML);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".btn-modelo");
+        const items = document.querySelectorAll(".banner-item");
+        const btnPrev = document.getElementById("btnPrev");
+        const btnNext = document.getElementById("btnNext");
+        let currentIndex = 0;
+
+        function setActiveButton(index) {
+            buttons.forEach((button) => {
+                button.classList.remove("active");
+            });
+            buttons[index].classList.add("active");
+        }
+
+        function showItem(index) {
+            items.forEach((item) => {
+                item.classList.add("d-none");
+            });
+            items[index].classList.remove("d-none");
+        }
+
+        btnPrev.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            showItem(currentIndex);
+            setActiveButton(currentIndex);
         });
-    </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll(".btn-modelo");
-            const items = document.querySelectorAll(".banner-item");
-            const btnPrev = document.getElementById("btnPrev");
-            const btnNext = document.getElementById("btnNext");
-            let currentIndex = 0;
+        btnNext.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            showItem(currentIndex);
+            setActiveButton(currentIndex);
+        });
 
-            function setActiveButton(index) {
-                buttons.forEach((button) => {
-                    button.classList.remove("active");
-                });
-                buttons[index].classList.add("active");
-            }
-
-            function showItem(index) {
-                items.forEach((item) => {
-                    item.classList.add("d-none");
-                });
-                items[index].classList.remove("d-none");
-            }
-
-            btnPrev.addEventListener("click", () => {
-                currentIndex = (currentIndex - 1 + items.length) % items.length;
-                showItem(currentIndex);
-                setActiveButton(currentIndex);
-            });
-
-            btnNext.addEventListener("click", () => {
-                currentIndex = (currentIndex + 1) % items.length;
-                showItem(currentIndex);
-                setActiveButton(currentIndex);
-            });
-
-            buttons.forEach((button, index) => {
-                button.addEventListener("click", () => {
-                    showItem(index);
-                    setActiveButton(index);
-                    currentIndex = index;
-                });
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                showItem(index);
+                setActiveButton(index);
+                currentIndex = index;
             });
         });
-    </script>
+    });
+</script>
