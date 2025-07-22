@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HRV TOURING</title>
+    <title>HRV ADVANCE</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -48,17 +48,44 @@
 
     <!--<script src="https://cdn.jsdelivr.net/npm/@microsoft/azsearch.js@0.0.21/dist/AzSearch.bundle.js"></script>-->
 
+
     <meta name="robots" content="index,follow">
     <meta name="description" content="Honda Daitan - A maior concessionária Honda do Brasil">
     <meta name="generator" content="Piranha CMS 10.3.0">
     <meta property="og:type" content="article">
     <meta property="og:title" content="New HR-V Touring | Honda Daitan - A maior concessionária Honda do Brasil">
     <meta property="og:description" content="Honda Daitan - A maior concessionária Honda do Brasil">
+
+
 </head>
 
-</html>
-
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW6LLMBQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <div id="regiao"></div>
+        <script src="/vuejs/regiao.js?v=1.2"></script>
+
+        <div id="dvheader"></div>
+    </header>
+
+
+    <script>
+        function fn_noticias_home() {
+
+            $.ajax({
+                url: '/Cms/noticias_home',
+                type: 'POST',
+                success: function (result) {
+                    $('#dvNoticias').html(result);
+                }
+            });
+
+        }
+    </script>
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <main>
@@ -212,13 +239,13 @@
             <div id="modelVersoes" class="py-2 mb-5">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 col-lg-3 d-flex">
-                        <a id="touring" href="/new-hrv-touring" class="btn btn-versao text-center mx-2 active">
+                        <a id="touring" href="/new-hrv-touring" class="btn btn-versao text-center mx-2">
                             <img src="img/modelos/hrv/btn-hrv-touring-2026.png" class="m-auto d-block" alt="">
                             Touring
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-3 col-lg-3 d-flex">
-                        <a id="advance" href="/new-hrv-advance" class="btn btn-versao text-center mx-2">
+                        <a id="advance" href="/new-hrv-advance" class="btn btn-versao text-center mx-2 active">
                             <img src="img/modelos/hrv/btn-hrv-advance-2026.png" class="m-auto d-block" alt="">
                             Advance
                         </a>
@@ -237,7 +264,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-sm-12 col-md-6 col-lg-6">
@@ -264,56 +290,56 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-branco-tafeta-solido-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-branco-tafeta-solido-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Branco Tafetá Sólido</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-branco-topazio-perolizado-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-branco-topazio-perolizado-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Branco Topázio Perolizado</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-prata-platinum-metalico-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-prata-platinum-metalico-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Prata Platinum Metálico</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-cinza-titanio-perolizado-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-cinza-titanio-perolizado-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Cinza Titânio Perolizado</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-azul-cosmico-metalico-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-azul-cosmico-metalico-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Azul Cósmico Metálico</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-cinza-bassalto-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-cinza-bassalto-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Cinza Basalto Metálico</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-preto-cristal-persolizado-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-preto-cristal-persolizado-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Preto Cristal Perolizado</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/modelos/hrv/touring/hrv-touring-vermelho-supernova-perolizado-2026.png"
+                                    <img src="img/modelos/hrv/advance/hrv-advance-vermelho-supernova-perolizado-2026.png"
                                         class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <p>Vermelho Supernova Perolizado</p>
@@ -325,21 +351,21 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="versao-box p-4 my-4">
-                            <h3 class="h2estilo"><span>Touring</span></h3>
-                            <p><b><i>Diferenciais do New HR-V Touring</i></b></p>
+                            <h3 class="h2estilo"><span>Advance</span></h3>
+                            <p><b><i>Diferenciais do New HR-V Advance</i></b></p>
 
                             <ul class="versao-list">
                                 <li>Novo motor 1.5L VTEC Turbo Flex com injeção direta de 177cv</li>
                                 <li>Honda Sensing - Pacote de segurança e assistência ao condutor</li>
                                 <li>myHonda Connect - Conexão única entre você e seu Honda</li>
-                                <li>Porta-malas com fechamento automático com função Hands Free</li>
-                                <li>Ajuste elétrico do banco do motorista</li>
-                                <li>Revestimento interior refinado em couro*</li>
+                                <li>Carregador por indução para smartphones</li>
+                                <li>TFT Digital de 7"</li>
+                                <li>Ar-condicionado digital dual zone com efeito brisa</li>
                             </ul>
 
                             <div class="footer-nav">
                                 <a href="#modeloFichatecnica" class="btn btn-outline-primary mx-1">Ficha Técnica</a>
-                                <a href="tenho-interesse.html" class="btn btn-primary mx-1">Tenho Interesse</a>
+                                <a href="/escreva-para-nos" class="btn btn-primary mx-1">Tenho Interesse</a>
                             </div>
                         </div>
                     </div>
@@ -347,15 +373,15 @@
 
             </div>
         </section>
-
         <section id="modeloCotacao" class="py-5">
             <div class="container">
                 <h1 class="h1estilo mb-5">Peça uma <b>cotação</b></h1>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <p class="mb-0 color-gray text-center">A partir de</p>
-                        <h1 class="mb-0 color-gray text-center">R$ 199.800,00*</h1>
-                        <p class="color-gray text-center"><b>Transmissão Automática CVT</b></p>
+                        <h1 class="mb-0 color-gray text-center">R$ 192.700,00*</h1>
+                        <p class="color-gray text-center"><b>Transmissão automática do tipo CVT com Paddle Shifts</b>
+                        </p>
 
                         <p class="text-center"><small style="font-size: 10px; line-height: .4;">*Preço público sugerido
                                 em
@@ -377,6 +403,7 @@
                         </div>
 
                     </div>
+
                     <div id="pecaUmaCotacao"></div>
                     <script src="/vuejs/pecaUmaCotacao.js?v=1"></script>
                 </div>
@@ -384,10 +411,10 @@
         </section>
 
 
-
         <section id="modeloGaleria" class="py-5">
             <div class="container">
                 <h1 class="h1estilo mb-5">Todos os ângulos do seu HR-V</h1>
+
                 <div class="mt-5">
                     <div id="thumbnailCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -397,7 +424,7 @@
                                     <!-- Thumbnails 1-6 -->
                                     <div class="col-sm-6 col-md-4 col-lg-4">
                                         <div class="thumbnail-container">
-                                            <img src="img/modelos/galeria_hrv/gallery-hrv-touring-1-2026.webp"
+                                            <img src="img/modelos/galeria_hrv/gallery-hrv-advance-1-2026.webp"
                                                 class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
                                             <div class="d-none thumbnail-caption">
                                                 <p class="mb-0"><b>Freios ABS/EBD: </b>
@@ -852,6 +879,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -1203,14 +1231,14 @@
                                 <div class="ficha-list ps-0">
                                     <ul class="list-striped list-dots">
                                         <li>Motor 1.5 DI VTEC Turbo Flex</li>
-                                        <li>Potência (Gasolina - Etanol) - 177 cv a 6000rpm</li>
-                                        <li>Torque (Gasolina - Etanol) - 24,5 kgfm a 1700 a 4500 rpm (G & E)</li>
+                                        <li>Potência (Gasolina - Etanol) - 177 cv a 6600rpm</li>
+                                        <li>Torque (Gasolina - Etanol) - 24,5 kgfm a 1750 a 4500 rpm (G & E)</li>
                                         <li>Transmissão automática do tipo CVT com Paddle Shifts</li>
                                         <li>Direção com assistência elétrica progressiva EPS</li>
                                         <li>Tração dianteira</li>
                                         <li>Suspensão dianteira MacPherson</li>
                                         <li>Suspensão traseira - Barra de torção</li>
-                                        <li>Rodas (pol) - Liga leve - aro 17''</li>
+                                        <li>Rodas (pol) - Liga leve - aro 17"</li>
                                         <li>Pneus 215/60R17 96H</li>
                                         <li>Estepe temporário T145 / 90 R16</li>
                                     </ul>
@@ -1226,7 +1254,7 @@
                                         <li>Comprimento (mm) - 4.385</li>
                                         <li>Altura (mm) 1.590</li>
                                         <li>Largura (mm) 1.790</li>
-                                        <li>Peso em ordem de marcha (kg) 1.422</li>
+                                        <li>Peso em ordem de marcha (kg) 1.410</li>
                                         <li>Volume porta-malas (litros) 354</li>
                                         <li>Tanque de combustível (litros) 50</li>
                                         <li>Ângulos de entrada / saída - 16,0° / 20,3°</li>
@@ -1242,45 +1270,29 @@
                                     <ul class="list-striped list-dots">
                                         <li>Estrutura de deformação progressiva ACE (Advanced Compatibility Engineering)
                                         </li>
-                                        <li>Alarme de segurança com imobilizador ECU
-                                        </li>
+                                        <li>Alarme de segurança com imobilizador ECU</li>
                                         <li>Freios com sistemas ABS e EBD (Anti-Lock Braking System / Electronic Brake
-                                            Distribution)
-                                        </li>
-                                        <li>EBA (Emergency Brake Assist)
-                                        </li>
+                                            Distribution)</li>
+                                        <li>EBA (Emergency Brake Assist)</li>
                                         <li>Freio de estacionamento eletrônico EPB (Electric Parking Brake) com função
                                             Brake
-                                            Hold
-                                        </li>
+                                            Hold</li>
                                         <li>Sistema VSA (Vehicle Stability Assist - Assistente de tração e estabilidade)
                                         </li>
-                                        <li>Sistema HSA (Hill Start Assist - Assistente de partidas em aclive)
-                                        </li>
-                                        <li>ESS (Emergency Stop Signal - Sistema de luzes de emergência)
-                                        </li>
-                                        <li>Sistema AHA (Agile Handling Assist) - Assistente de dirigibilidade ágil
-                                        </li>
-                                        <li>Assistente de Controle de Descida (HDC - Hill Descent Control)
-                                        </li>
-                                        <li>Airbags frontais, laterais e de cortina (6 airbags)
-                                        </li>
+                                        <li>Sistema HSA (Hill Start Assist - Assistente de partidas em aclive)</li>
+                                        <li>ESS (Emergency Stop Signal - Sistema de luzes de emergência)</li>
+                                        <li>Sistema AHA (Agile Handling Assist) - Assistente de dirigibilidade ágil</li>
+                                        <li>Assistente de Controle de Descida (HDC - Hill Descent Control)</li>
+                                        <li>Airbags frontais, laterais e de cortina (6 airbags)</li>
                                         <li>Cinto de segurança de 3 pontos e encosto de cabeça para todos os ocupantes
                                         </li>
-                                        <li>Cinto de segurança dianteiro com sistema de tensionamento
-                                        </li>
-                                        <li>Lembrete de afivelamento dos cintos dianteiros e traseiros
-                                        </li>
-                                        <li>Trava infantil nas portas traseiras
-                                        </li>
-                                        <li>Sistema ISOFIX de fixação para cadeirinhas infantis
-                                        </li>
-                                        <li>Câmera de ré multivisão com linhas dinâmicas (três vistas)
-                                        </li>
-                                        <li>Alerta de pressão dos pneus (TPMS)
-                                        </li>
-                                        <li>Lembrete de esquecimento de objetos no banco traseiro
-                                        </li>
+                                        <li>Cinto de segurança dianteiro com sistema de tensionamento</li>
+                                        <li>Lembrete de afivelamento dos cintos dianteiros e traseiros</li>
+                                        <li>Trava infantil nas portas traseiras</li>
+                                        <li>Sistema ISOFIX de fixação para cadeirinhas infantis</li>
+                                        <li>Câmera de ré multivisão com linhas dinâmicas (três vistas)</li>
+                                        <li>Alerta de pressão dos pneus (TPMS)</li>
+                                        <li>Lembrete de esquecimento de objetos no banco traseiro</li>
                                         <li>Sistema Honda LaneWatch - Assistente para redução de ponto cego</li>
                                     </ul>
                                 </div>
@@ -1299,17 +1311,14 @@
                                         <li>CMBS - Sistema de frenagem para mitigação de colisão - Sistema de
                                             acionamento de
                                             freios ao detectar uma possível colisão frontal com o objetivo de mitigar
-                                            acidentes.
-                                        </li>
+                                            acidentes.</li>
                                         <li>LKAS - Sistema de permanência de faixa - Sistema que detecta as faixas de
                                             rodagem e ajusta a direção com o objetivo de auxiliar o motorista a manter o
-                                            veículo centralizado nas linhas de marcação.
-                                        </li>
+                                            veículo centralizado nas linhas de marcação.</li>
                                         <li>RDM - Sistema para mitigação de evasão de pista - Sistema que detecta a
                                             saída da
                                             pista e ajusta a direção com o objetivo de evitar a sua evasão e possíveis
-                                            acidentes.
-                                        </li>
+                                            acidentes.</li>
                                         <li>AHB - Ajuste automático de farol - Sistema de assistência automática de
                                             farol
                                             alto, que se ajusta de acordo com a situação.</li>
@@ -1322,31 +1331,20 @@
                                 <h3 class="color-red">Acabamento Exterior</h3>
                                 <div class="ficha-list ps-0">
                                     <ul class="list-striped list-dots">
-                                        <li>Lanternas traseiras em LED
-                                        </li>
+                                        <li>Lanternas traseiras em LED</li>
                                         <li>Luz de placa em LED</li>
-                                        <li>Antena tipo Tubarão
-                                        </li>
-                                        <li>Limpador de para-brisa com função intermitente (variável)
-                                        </li>
+                                        <li>Antena tipo Tubarão</li>
+                                        <li>Limpador de para-brisa com função intermitente (variável)</li>
                                         <li>Espelhos retrovisores na cor do veículo com indicadores em LED e rebatimento
-                                            elétrico automático
-                                        </li>
-                                        <li>Conjunto óptico com DRL em LED (Luzes de Rodagem Diurna)
-                                        </li>
-                                        <li>Faróis com acendimento automático (sensor crepuscular)
-                                        </li>
-                                        <li>Faróis de neblina em LED
-                                        </li>
-                                        <li>Para-choques esportivos - Detalhes pintado em preto
-                                        </li>
-                                        <li>Escapamento Duplo com ponteiras
-                                        </li>
-                                        <li>Lanternas traseiras com acabamento fumê e barra horizontal em LED - Barra
-                                            horizontal em LED fumê
-                                        </li>
+                                            elétrico automático</li>
+                                        <li>Conjunto óptico com DRL em LED (Luzes de Rodagem Diurna)</li>
+                                        <li>Faróis com acendimento automático (sensor crepuscular)</li>
+                                        <li>Faróis de neblina em LED</li>
+                                        <li>Para-choques esportivos</li>
+                                        <li>Escapamento Duplo com ponteiras</li>
+                                        <li>Lanternas traseiras com acabamento fumê e barra horizontal em LED</li>
                                         <li>Chave com função Smart Entry com controle remoto, abertura e fechamento dos
-                                            vidros e destravamento das portas por sensor aproximação na chave</li>
+                                            vidros e destravamento das portas por sensor aproximação na chave.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1356,55 +1354,41 @@
                                 <h3 class="color-red">Conforto e Tecnologia</h3>
                                 <div class="ficha-list ps-0">
                                     <ul class="list-striped list-dots">
-                                        <li>Sensores de estacionamento com aviso sonoro Dianteiros e Traseiros
-                                        </li>
+                                        <li>Sensores de estacionamento com aviso sonoro Dianteiros e Traseiros</li>
                                         <li>Botão de travamento das portas (motorista e passageiro) com travamento
-                                            automático de velocidade
-                                        </li>
+                                            automático de velocidade</li>
                                         <li>Vidros elétricos com a função de subida automática dos vidros com "um toque"
                                             em
-                                            todas as portas com anti esmagamento
-                                        </li>
-                                        <li>Alavanca de seta com One-Touch (pisca três vezes com um toque)
-                                        </li>
-                                        <li>Coluna de direção com ajuste de altura e profundidade
-                                        </li>
-                                        <li>Banco do motorista com ajuste elétrico
-                                        </li>
-                                        <li>Banco traseiro com apoio de braço central e porta-copos
-                                        </li>
-                                        <li>Porta-revistas no banco passageiro e motorista
-                                        </li>
-                                        <li>Desligamento automático dos fárois após 15 segundos
-                                        </li>
-                                        <li>Jogo de tapetes com trava antiescorregamento (carpete)
-                                        </li>
-                                        <li>Espelhos no quebra sol com iluminação
-                                        </li>
-                                        <li>Espelho retrovisor interno fotocrômico
-                                        </li>
+                                            todas as portas com anti esmagamento</li>
+                                        <li>Alavanca de seta com One-Touch (pisca três vezes com um toque)</li>
+                                        <li>Coluna de direção com ajuste de altura e profundidade</li>
+                                        <li>Banco traseiro com apoio de braço central e porta-copos</li>
+                                        <li>Porta-revistas no banco passageiro e motorista</li>
+                                        <li>Desligamento automático dos fárois após 15 segundos</li>
+                                        <li>Tomada 12 Volts dianteira</li>
+                                        <li>Jogo de tapetes com trava antiescorregamento (carpete)</li>
+                                        <li>Espelhos no quebra sol com iluminação</li>
+                                        <li>Espelho retrovisor interno fotocrômico</li>
                                         <li>Ar-condicionado Digital automático Dual Zone com ventilação para os
                                             ocupantes
                                             traseiros</li>
                                         <li>Entradas USB - 2 dianteiras + 2 traseiras</li>
                                         <li>Botão de partida do motor (START/STOP)</li>
                                         <li>Banco traseiro Bipartido (60/40) Com exclusiva tecnologia Magic Seat</li>
-                                        <li>Volante e alavanca do câmbio revestidos em couro</li>
-                                        <li>Acabamento do volante em Black Piano - Comandos e Raio inferior</li>
+                                        <li>Volante e alavanca do câmbio revestidos em couro*</li>
+                                        <li>Acabamento do volante em Black Piano - Comandos</li>
                                         <li>Revestimento dos bancos - couro na cor Preta ou Cinza Claro</li>
                                         <li>Bancos com Estabilizador Corporal - Maior conforto e ergonomia</li>
                                         <li>Interface para smartphones Apple CarPlay e Android Auto com Voice Tag</li>
-                                        <li>Alto-falantes - 4 alto-falantes + 4 Tweeters</li>
-                                        <li>Multimídia 8" touchscreen com interface sem-fio para smartphones com Apple
+                                        <li>Alto-falantes - 4 alto-falantes + 2 Tweeters</li>
+                                        <li>Multimídia 8” touchscreen com interface sem-fio para smartphones com Apple
                                             CarPlay e Android Auto com Voice Tag, câmera de ré</li>
                                         <li>Controle de áudio no volante</li>
                                         <li>Painel digital TFT de alta resolução (Thin-Film Transistor) - 7"</li>
                                         <li>Carregador por indução</li>
-                                        <li>Seleção de modo de condução - Normal + ECON + Sport Inclinação automática de
-                                            retrovisor ao engatar a ré Sensor de chuva</li>
-                                        <li>Tampa traseira automático com sensor de presença (abertura e fechamento) e
-                                            função Hands Free</li>
-                                        <li>Partida remota</li>
+                                        <li>Seleção de modo de condução - Normal + ECON + Sport</li>
+                                        <li>Inclinação automática de retrovisor ao engatar a ré</li>
+                                        <li>Sensor de chuva</li>
                                         <li>myHonda Connect - Conexão única entre você e o seu Honda</li>
                                     </ul>
                                 </div>
@@ -1446,13 +1430,12 @@
                     </div>
                 </div>
 
-
             </div>
 
             <div class="container">
                 <div class="row mt-3">
-                    <p><small>
-                            A Honda Automóveis do Brasil reserva-se o direito de modificar equipamentos, especificações
+                    <p><small>A Honda Automóveis do Brasil reserva-se o direito de modificar equipamentos,
+                            especificações
                             técnicas, preços ou cores sem prévia notificação. Garantia de 3 anos sem limite de
                             quilometragem
                             válida na rede de concessionárias Honda. Preço público sugerido em reais, com frete incluso,
@@ -1461,8 +1444,7 @@
                             concessionária para mais informações). Alguns itens são revestidos em couro e/ou materiais
                             sintéticos de alta qualidade. *Apple CarPlay é uma marca comercial da Apple Inc. Android
                             Auto é
-                            uma marca comercial da Google Inc.
-                        </small></p>
+                            uma marca comercial da Google Inc.</small></p>
                 </div>
             </div>
             </div>
@@ -1560,15 +1542,14 @@
                         </button>
 
                     </div>
-
                 </div>
             </div>
         </section>
 
         <div id="emailPecaUmaCotacao"></div>
         <script src="/vuejs/emailPecaUmaCotacao.js?v=1"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </main>
+
 
     <!-- Modal -->
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -1585,60 +1566,58 @@
             </div>
         </div>
     </div>
-</body>
 
+    <script>
+        // Atualiza o modal com a imagem e o caption corretos
+        $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
+            var imageSrc = $(this).attr('src');
+            var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
 
-<script>
-    // Atualiza o modal com a imagem e o caption corretos
-    $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
-        var imageSrc = $(this).attr('src');
-        var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
-
-        $('#modalImage').attr('src', imageSrc);
-        $('#modalCaption').html(captionHTML);
-    });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".btn-modelo");
-        const items = document.querySelectorAll(".banner-item");
-        const btnPrev = document.getElementById("btnPrev");
-        const btnNext = document.getElementById("btnNext");
-        let currentIndex = 0;
-
-        function setActiveButton(index) {
-            buttons.forEach((button) => {
-                button.classList.remove("active");
-            });
-            buttons[index].classList.add("active");
-        }
-
-        function showItem(index) {
-            items.forEach((item) => {
-                item.classList.add("d-none");
-            });
-            items[index].classList.remove("d-none");
-        }
-
-        btnPrev.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            showItem(currentIndex);
-            setActiveButton(currentIndex);
+            $('#modalImage').attr('src', imageSrc);
+            $('#modalCaption').html(captionHTML);
         });
+    </script>
 
-        btnNext.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            showItem(currentIndex);
-            setActiveButton(currentIndex);
-        });
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".btn-modelo");
+            const items = document.querySelectorAll(".banner-item");
+            const btnPrev = document.getElementById("btnPrev");
+            const btnNext = document.getElementById("btnNext");
+            let currentIndex = 0;
 
-        buttons.forEach((button, index) => {
-            button.addEventListener("click", () => {
-                showItem(index);
-                setActiveButton(index);
-                currentIndex = index;
+            function setActiveButton(index) {
+                buttons.forEach((button) => {
+                    button.classList.remove("active");
+                });
+                buttons[index].classList.add("active");
+            }
+
+            function showItem(index) {
+                items.forEach((item) => {
+                    item.classList.add("d-none");
+                });
+                items[index].classList.remove("d-none");
+            }
+
+            btnPrev.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                showItem(currentIndex);
+                setActiveButton(currentIndex);
+            });
+
+            btnNext.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                showItem(currentIndex);
+                setActiveButton(currentIndex);
+            });
+
+            buttons.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    showItem(index);
+                    setActiveButton(index);
+                    currentIndex = index;
+                });
             });
         });
-    });
-</script>
+    </script>
