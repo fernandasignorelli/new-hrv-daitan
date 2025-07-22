@@ -1,0 +1,48 @@
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    background-color: var(--color-red);
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .thumbnail-container{
+    cursor: pointer;
+  }
+
+  .thumbnail-container:active,
+  .thumbnail-container:hover{
+    opacity: .5;
+  }
+
+  .modal-galeria .modal-content{
+    background-color: var(--color-dark-gray);    
+    border-radius: 2px;
+  }
+
+  .modal-galeria .modal-header{
+    border-bottom: 0;    
+  }
+
+  .modal-galeria .btn-close{
+    background-image: url(../img/btn-close.svg);
+  }
+
+  #modalCaption p{
+    color: var(--color-white);
+  }
+
+  #selosPremios .carousel-caption h5,
+  #selosPremios .carousel-caption p{
+    color: var(--color-gray-0);
+  }
+
+  #carouselModelos .carousel,
+  #selosPremios .carousel{
+    background: transparent !important;
+  }
+
+  #selosPremios .carousel-caption{
+    position: sticky;
+    margin: auto;
+    max-width: 700px;
+  }

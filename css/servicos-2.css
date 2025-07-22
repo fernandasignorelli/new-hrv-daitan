@@ -1,0 +1,76 @@
+#capaServicos{
+    background-image: url(../img/servicos.webp);
+}
+
+#revisaoSwitches{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#revisaoSwitches .form-switch:first-child{
+    margin-right: 50px;
+}
+
+.revisao-list{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.revisao-list li{
+    padding: 18px 15px;
+    border: 1px solid var(--color-gray-2);
+    color: var(--color-gray-0);
+    font-size: 18px;
+}
+
+.preco{
+    font-size: var(--font-h1);
+}
+
+.cents{
+    font-size: var(--font-h3);
+}
+
+.val-prestacao{
+    font-size: var(--font-h3);
+    font-weight: var(--font-bold);
+}
+
+#navRevisao{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#navRevisao .btn{
+    margin: 0 5px;
+    width: 220px;
+}
+
+@media screen and (max-width: 575px) { 
+    #revisaoSwitches{
+        display: block;
+    }
+
+    #revisaoSwitches .form-switch:first-child{
+        margin-right: 0;
+    }
+
+    #navRevisao{
+        display: block;
+    }
+
+    #navRevisao .btn{
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+#revDados p,
+#revCar p{
+    color: var(--color-gray-0);
+}
+

@@ -1,0 +1,109 @@
+#capaConsorcio{
+    background-image: url(../img/capa-consorcio.webp);
+}
+
+#consorcio{
+    background-image: url(../img/bg-triangle-gray-3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+}
+
+#consorcioModelos{
+    background-color: var(--color-gray-3);
+    background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+}
+
+#consorcioEscolhido{
+    background-color: var(--color-gray-3);
+}
+
+#consorcioNav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#consorcioNav .btn{
+    width: 130px;
+}
+
+#consorcioNav .btn:first-child{
+    margin-right: 10px;
+}
+
+#navDuvidas .nav-link{
+    background-color: var(--color-gray-3);
+    color: var(--color-red);
+    margin-bottom: 5px;
+}
+
+#navDuvidas .tab-pane p,
+#navDuvidas .tab-pane li{
+    color: var(--color-dark-gray);
+}
+
+#navDuvidas .accordion-button{
+    font-weight: var(--font-bold);
+}
+
+#navDuvidas .nav-link.active{
+    background-color: var(--color-gray-0);
+    color: var(--color-white);
+}
+
+.btnModelo{
+    max-width: 330px !important;
+    border: 2px solid var(--color-white);
+    color: var(--color-gray-0);
+    display: block;
+    margin: 5px auto;
+    background-color: var(--color-white);
+    padding: 30px 0;
+}
+
+.btnModelo:hover,
+.btnModelo:active{
+    border: 2px solid var(--color-red);
+    background-color: var(--color-white);
+    color: var(--color-red);
+}
+
+.btnModelo img{
+    width: 75%;
+}
+
+.btn-duvidas{
+    background: var(--color-gray-3);
+    color: var(--color-gray-0);
+    text-align: left;
+}
+
+.btn-duvidas:hover{
+    background-color: var(--color-hover);
+    color: var(--color-white);
+}
+
+.btn-duvidas.active{
+    background-color: var(--color-gray-2) !important;
+    color: var(--color-white) !important;
+}
+
+@media screen and (max-width: 575px) {
+    #consorcioEscolhido img{
+        margin-bottom: 20px;
+    }
+
+    #consorcioNav{
+        display: block !important;
+    }
+
+    #consorcioNav .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

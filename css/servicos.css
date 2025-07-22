@@ -1,0 +1,631 @@
+﻿.table-striped tr:nth-child(odd) {
+    background-color: var(--color-gray-3); /* Cor para as linhas ímpares */
+}
+
+.table-striped tr:nth-child(even) {
+    background-color: var(--color-white); /* Cor para as linhas pares */
+}
+
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+}
+
+.table-striped td, .table-striped th{
+    padding: 8px 5px;
+}
+
+
+#capaServicos {
+    background-image: url(../img/servicos.webp);
+}
+
+#revisaoSwitches {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+    #revisaoSwitches .form-switch:first-child {
+        margin-right: 50px;
+    }
+
+.revisao-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+    .revisao-list li {
+        padding: 8px 12px;
+        border: 1px solid var(--color-gray-2);
+        color: var(--color-gray-0);
+        font-size: 18px;
+    }
+
+.desc-servico {
+    border: 1px solid var(--color-gray-2);
+    border-radius: 8px;
+}
+
+.desc-servico-img {
+    max-width: 420px;
+}
+
+.desc-servico-pecas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco {
+    font-size: var(--font-h1);
+}
+
+.cents {
+    font-size: var(--font-h3);
+}
+
+.val-prestacao {
+    font-size: var(--font-h3);
+    font-weight: var(--font-bold);
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 10px auto;
+}
+
+.icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-select {
+    display: none;
+}
+
+.position-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.modelo-img {
+    width: 100%;
+    height: 213px;
+}
+
+    .modelo-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.absolute-card {
+    position: absolute;
+    height: 480px !important;
+    z-index: 10;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+}
+
+.servicos-list {
+    list-style: none; /* Remove o marcador padrão */
+    padding-left: 0; /* Remove o recuo padrão do marcador */
+}
+
+    .servicos-list li {
+        padding: 6px 10px 6px 30px;
+        position: relative;
+        color: var(--color-gray-1);
+        font-size: 14px;
+    }
+
+        .servicos-list li::before {
+            content: ''; /* Adicione um pseudo-elemento ::before para a imagem do marcador */
+            background-image: url(../img/list-style-car.svg); /* Sua imagem de marcador */
+            background-size: contain; /* Ajusta o tamanho da imagem para caber */
+            background-repeat: no-repeat; /* Evita repetir a imagem */
+            margin-right: 10px; /* Aumenta o espaço à direita do marcador */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 20px; /* Largura desejada para a imagem do marcador */
+            height: 20px; /* Altura desejada para a imagem do marcador */
+        }
+
+.modal-serv-list {
+    list-style: none;
+    padding-left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+    .modal-serv-list li {
+        padding: 10px;
+        position: relative;
+        font-size: 14px;
+    }
+
+        .modal-serv-list li a {
+            display: block;
+            text-decoration: none;
+            border: 1px solid var(--color-red);
+            padding: 5px 8px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+            .modal-serv-list li a.active {
+                background-color: var(--color-red);
+                color: var(--color-white);
+            }
+
+            .modal-serv-list li a:hover {
+                color: var(--color-white);
+                background-color: var(--color-hover);
+            }
+
+#navRevisao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+    #navRevisao .btn {
+        margin: 0 5px;
+        width: 220px;
+    }
+
+/* Revisão Programada */
+#btn-accord {
+    background-image: url(../img/revisao/btnAccord.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-accord2 {
+    background-image: url(../img/revisao/btnAccord2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-city {
+    background-image: url(../img/revisao/btnCity.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-city2 {
+    background-image: url(../img/revisao/btnCity2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic {
+    background-image: url(../img/revisao/btnCivic.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic2 {
+    background-image: url(../img/revisao/btnCivic2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic3 {
+    background-image: url(../img/revisao/btnCivic3.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-crv {
+    background-image: url(../img/revisao/btnCrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-fit {
+    background-image: url(../img/revisao/btnFit.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-hrv {
+    background-image: url(../img/revisao/btnHrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-hrv2 {
+    background-image: url(../img/revisao/btnHrv2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-wrv {
+    background-image: url(../img/revisao/btnWrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ACESSORIOS */
+#acessorios {
+    background-color: var(--color-white);
+}
+
+#acessoriosSort {
+    width: 100%;
+    border: 1px solid var(--color-gray-2);
+    border-radius: 4px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.acessorios-sort {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: var(--font-small);
+    text-align: end;
+}
+
+    .acessorios-sort p {
+        width: 280px;
+        margin-right: 8px;
+    }
+
+.acessorios-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.acessorios-btn {
+    border-radius: 4px;
+    margin: 10px;
+    width: 200px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-gray-2);
+    color: var(--color-gray-0);
+}
+
+    .acessorios-btn:active,
+    .acessorios-btn.active,
+    .acessorios-btn:hover {
+        border-color: var(--color-red);
+        color: var(--color-red);
+    }
+
+#acessoriosPecas .card {
+    border: 1px solid var(--color-gray-2);
+}
+
+.card-produto {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-acessorios {
+    width: 100%;
+}
+
+.card-preco {
+    font-size: 20px;
+    color: var(--color-red);
+    font-weight: var(--font-bold);
+}
+
+#acessoriosPecas .card-modelo-img {
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#acessoriosPecas .card-modelo img {
+    width: 100%;
+    height: 196px !important;
+    transition: 0.5s all ease-in-out;
+}
+
+#acessoriosPecas .card-modelo:hover img {
+    border-radius: 4px 4px 0 0;
+}
+
+/* Acessorios Slide */
+/* Slider */
+#acessoriosPecas .slick-list {
+    margin: 0 50px;
+}
+
+#acessoriosPecas .slick-slide {
+    margin: 0px 10px;
+}
+
+#acessoriosPecas .logo-carousel {
+    overflow: inherit;
+}
+
+#acessoriosPecas .slick-slide img {
+    width: 100%;
+    margin: 0;
+}
+
+#acessoriosPecas .slick-track::before,
+#acessoriosPecas .slick-track::after {
+    display: table;
+    content: '';
+}
+
+#acessoriosPecas .slick-track::after {
+    clear: both;
+}
+
+#acessoriosPecas .slick-track {
+    padding: 1rem 0;
+}
+
+#acessoriosPecas .slick-loading .slick-track {
+    visibility: hidden;
+}
+
+#acessoriosPecas .slick-slide.slick-loading img {
+    display: none;
+}
+
+#acessoriosPecas .slick-slide.dragging img {
+    pointer-events: none;
+}
+
+#acessoriosPecas .slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+#acessoriosPecas .slick-arrow {
+    position: absolute;
+    top: 40%;
+    background: url(../img/angle-left-solid-btn.svg) center no-repeat;
+    color: var(--color-red);
+    border: none;
+    width: 45px;
+    height: 45px;
+    text-indent: -10000px;
+    margin-top: 0px;
+    z-index: 99;
+}
+
+    #acessoriosPecas .slick-arrow.slick-next {
+        right: 0px;
+        transform: rotate(180deg);
+    }
+
+    #acessoriosPecas .slick-arrow.slick-prev {
+        left: 0px;
+    }
+
+/* Acessorio Single */
+#acessorioSingle h1 {
+    font-size: 22px;
+    color: var(--color-red);
+    font-weight: var(--font-bold);
+}
+
+#acessorioSingle .preco {
+    font-size: 32px;
+}
+
+#acessorioSingle .form {
+    border: 1px solid var(--color-gray-2);
+}
+
+#pecasAcessorios {
+    & .btn
+
+{
+    width: 300px;
+}
+
+}
+
+#agendaFacil {
+    display: flex;
+}
+
+.btn-select {
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+    .btn-select:hover,
+    .btn-select:active {
+        border: var(--bs-border-width) solid var(--bs-border-color);
+    }
+
+    .btn-select:focus {
+        border-color: #86B7FE;
+    }
+
+.scrollable-menu {
+    max-height: 350px;
+    overflow-y: auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.dados-produto {
+    background-color: var(--color-gray-3);
+    border-radius: 6px;
+}
+
+    .dados-produto h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--color-red);
+    }
+
+.compras {
+    margin-bottom: 20px;
+}
+
+    .compras .btn {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+.btn-ml {
+    font-weight: var(--font-bold);
+    background-color: #FFE700;
+    color: #1E2E7A;
+}
+
+    .btn-ml:hover {
+        background-color: #F9F0A1;
+    }
+
+.btn-magalu {
+    font-weight: var(--font-bold);
+    color: var(--color-white);
+    background-color: #0E87FE;
+    background-image: url(../img/logos/-bggradient.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+}
+
+    .btn-magalu:hover {
+        color: var(--color-white);
+        background-color: #78B9FA;
+    }
+
+.btn-olx {
+    font-weight: var(--font-bold);
+    color: var(--color-white);
+    background-color: #6E0AD6;
+}
+
+    .btn-olx:hover {
+        background-color: #B56FFF;
+        color: var(--color-white);
+    }
+
+@media (max-width: 768px) {
+    #agendaFacil {
+        display: block;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 40%;
+        background: url(../img/angle-left-solid-btn.svg) center no-repeat;
+        color: var(--color-red);
+        border: none;
+        width: 45px;
+        height: 45px;
+        text-indent: -10000px;
+        margin-top: 0px;
+        z-index: 99;
+    }
+
+        .slick-arrow.slick-next {
+            right: 0px;
+            transform: rotate(180deg);
+        }
+
+        .slick-arrow.slick-prev {
+            left: 0px;
+        }
+
+
+        .slick-arrow.slick-next {
+            right: 0px;
+            transform: rotate(180deg);
+        }
+
+        .slick-arrow.slick-prev {
+            left: 0px;
+        }
+}
+
+
+@media screen and (max-width: 575px) {
+    #revisaoSwitches {
+        display: block;
+    }
+
+        #revisaoSwitches .form-switch:first-child {
+            margin-right: 0;
+        }
+
+    #navRevisao {
+        display: block;
+    }
+
+        #navRevisao .btn {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+    .acessorios-nav {
+        display: block;
+    }
+
+    .acessorios-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #acessoriosPecas .slick-next {
+        background: url(../img/angle-left-solid-btn.svg) center no-repeat !important;
+    }
+
+    #pecasAcessorios {
+        & .btn
+
+{
+    width: 100%;
+}
+
+}
+
+.modal-serv-list li {
+    padding: 10px;
+}
+
+.select-service-list {
+    padding: 20px;
+    background: var(--color-white);
+    margin: 9.5px 12px;
+}
+
+#modal-serv-content table {
+    margin-top: 20px;
+}
+
+}
+
+#revDados p,
+#revCar p {
+    color: var(--color-gray-0);
+}

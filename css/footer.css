@@ -1,0 +1,327 @@
+.resp-tab-active {
+	border: 0px;	
+	margin-bottom: 5px !important;
+	padding: 12px 14px 14px 14px !important;
+    color: var(--color-white);
+    border-radius: 8px;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-tabs-list li {
+    font-size: 16px;
+}
+
+.resp-vtabs ul.resp-tabs-list {
+    width: 350px;
+}
+
+.resp-vtabs .resp-tabs-container{
+    width: calc(100% - 350px);
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: var(--color-gray-3);
+    border: 0px;
+    float: left;
+    width: calc(100% - 350px);
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-tabs-container {
+    color: var(--color-gray-0);
+}
+
+
+
+#footerFilialSP,
+#footerFilialVP{
+    background-color: var(--color-gray-3);
+}
+
+#footerFilialVP{
+    display: none;
+}
+
+.footer-filial{    
+    padding: 20px;
+    display: flex;
+    align-items: start;
+}
+
+
+.footer-filial .nav .nav-item button{
+    width: 100%;
+    text-align: left !important;
+    color: var(--color-gray-0);
+}
+
+.footer-filial .nav .nav-item button.active {
+    background-color: var(--color-gray-2);
+    color: var(--color-white) !important;
+}
+
+.footer-filial .nav .nav-item button.active::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+.footer-filial .nav-item{
+    width: 300px;
+}
+
+/*#trocaRegiao{
+    width: 320px;
+    padding: 20px 0px 0px 20px;
+}*/
+
+#navTroca{
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-city{
+    border: 1px solid var(--color-red);
+    background-color: var(--color-white);
+    color: var(--color-red);
+    width: 50%;
+    margin: 5px;
+}
+
+.btn-city:active,
+.btn-city:hover{
+    background-color: var(--color-hover);
+    color: var(--color-white);
+}
+
+.btn-city.activate{
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.tab-pane p{
+    color: var(--color-gray-0);
+}
+
+
+#rowLink{
+    padding-left: 200px;
+}
+
+#footerLinks{
+    background-color: var(--color-white);
+    padding: 30px;
+}
+
+#footerCopyright{
+    padding: 20px 0;
+    border-top: 1px solid var(--color-gray-0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerLogo {
+    text-align: right;
+}
+
+#footerLogo p{
+    text-align: right;
+}
+  
+#footerLogo img {
+    width: auto;
+}
+
+.link-tile{
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-red);
+    font-style: italic;
+    color: var(--color-gray-0);
+}
+
+.list-link{
+    font-style: italic;
+    font-size: 13px;
+    margin: 5px 0;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+.list-link a{
+    color: var(--color-gray-0);
+    text-decoration: none;
+}
+
+.list-link a:hover,
+.list-link a:active{
+    color: var(--color-red);
+    text-decoration: underline;
+}
+
+.unidade-pic{
+    border-radius: 8px;
+}
+
+/* Whatsapp */
+
+#fixed_button{
+    width: 56px;
+    height: 56px;
+    cursor: pointer;  
+    background-color: var(--color-green);
+    bottom: 155px;
+    right: 10px;
+    z-index: 10;
+}
+
+#fixed_button .dropdown-menu{
+    width: 200px;
+    border-radius: 4px;
+}
+
+
+#whatsapp_fixed{
+    display: block;
+    padding: 7px 16px;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 28px;
+}
+
+#whatsapp_fixed:hover{
+    opacity: .7;
+}
+
+.wa-item{
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--color-red);    
+}
+
+.wa-item a{    
+    color: var(--color-gray-0);
+    text-decoration: none;
+}
+  
+
+
+@media screen and (max-width: 575px) {
+    .footer-filial{
+        background-color: var(--color-gray-3);
+        padding: 20px;
+        display: block;
+    }
+
+    .footer-filial .nav-item{
+        width: 100%;
+    }
+
+    #trocaRegiao{
+        width: 100%;  
+        padding: 10px 0;      
+    }   
+
+    #navTroca{
+        display: block;
+    }
+
+    .btn-city{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .css-eco img{
+        display: block;
+        margin: auto;
+    }
+
+    /*#regiao{
+        width: 100%;
+    }
+
+    #regiaoNav{
+        display: block;
+    }
+
+    #regiaoNav .btn{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .resp-vtabs .resp-tabs-container{
+        width: 100%;
+    }
+
+    .resp-tabs-container{
+        background-color: var(--color-white);
+    }
+
+    h2.resp-accordion{
+        font-size: 16px;
+    }
+
+    .resp-tab-active{
+        border-radius: 0;
+    }
+
+    #footerEndereco button,
+    #footerEnderecovp button{
+        width: 100%;
+        margin-bottom: 5px;
+    }*/
+
+    #rowLink{
+        padding-left: 0px;
+    } 
+
+    #footerLinks .col-sm-6{
+        width: 50%;
+    }
+
+    #footerEndereco,
+    #footerEnderecovp{
+        padding: 10px;
+    }
+
+    #footerCopyright{
+        display: block;
+    }
+
+    #footerLogo img{
+        display: block;
+        margin: 5px auto;
+    }
+
+    #footerLogo p{
+        text-align: center;
+    }
+
+    #footerIbama{
+        display: block;
+        margin: 5px auto 20px auto;
+    }
+
+    .footer-endereco{
+        display: block;
+    }
+
+    .btn-googlemaps,
+    .btn-waze{
+        width: 100% !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}

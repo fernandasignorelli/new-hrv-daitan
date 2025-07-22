@@ -1,0 +1,264 @@
+/* Seminovos */
+
+#seminovosFilter{
+    border-bottom: 0;
+    border-radius: 4px;    
+}
+
+#seminovosFilter .navbar-brand{
+    font-size: var(--font-small);
+    color: var(--color-gray-0);
+}
+
+#seminovosRelevancia p{
+    text-wrap: nowrap;
+    font-size: var(--font-small);
+    margin-right: 8px;
+}
+
+.semi-preco{
+    font-size: 20px;
+}
+
+/*#seminovosCatalogo .card{
+    margin: 10px 0;
+}*/
+
+#sidebar .accordion{
+    border-radius: 0;
+}
+
+#sidebar a{
+    color: var(--color-black);
+    font-size: var(--font-small);
+    text-decoration: none;
+}
+
+#sidebar a:hover{
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+#sidebar .accordion-button {
+    position: relative;
+    text-align: center; /* Adicionado para centralizar o ícone */
+}
+
+/* Início V1 */
+#sidebar{
+    color: var(--color-gray-0);
+}
+
+.sidebar-item:first-child{
+    border-radius: 4px 4px 0 0;
+    border: 1px solid var(--color-gray-2);
+}
+
+.sidebar-item:last-child{
+    border-radius: 0 0 4px 4px;
+    border-left: 1px solid var(--color-gray-2);
+    border-right: 1px solid var(--color-gray-2);
+    border-bottom: 1px solid var(--color-gray-2);
+}
+
+.sidebar-item{
+    border-left: 1px solid var(--color-gray-2);
+    border-right: 1px solid var(--color-gray-2);
+    border-bottom: 1px solid var(--color-gray-2);
+    background-color: var(--color-gray-3);
+}
+
+#sidebar .form-select{
+    border: 1px solid var(--color-gray-2);
+    color: var(--color-gray-0);
+}
+
+#seminovosFilter{
+    border: 1px solid var(--color-gray-2);
+}
+/* Fim V1 */
+
+.list-group-item label{
+    font-size: 14px;
+}
+
+#sidebar .accordion-button::after {
+    content: '+';
+    display: inline-block; /* Alterado para inline-block para alinhar corretamente */
+    position: absolute;
+    right: 15px; /* Ajuste a posição conforme necessário */
+    font-size: 20px;
+}
+
+#sidebar .accordion-button[aria-expanded="true"]::after {
+    content: '−';
+    font-size: 20px;
+}
+
+#sidebar .accordion-button::after{
+    background-image: none;
+}
+
+#accordionMarcas .accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    display: inline-block; /* Alterado para inline-block para alinhar corretamente */
+    position: absolute;
+    right: 15px; /* Ajuste a posição conforme necessário */
+    font-size: 16px;
+}
+
+#accordionMarcas .accordion-button[aria-expanded="true"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    font-size: 16px;
+}
+
+.cor{
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 3px solid var(--color-gray-2);
+}
+
+
+#sidebar .form-control{
+    border-top: 1px solid var(--color-gray-2);
+    border-right: 1px solid var(--color-gray-2);
+    border-bottom: 1px solid var(--color-gray-2);
+    border-left: 1px solid var(--color-gray-2);
+}
+
+
+
+#sidebar .btn-search-seminovos{
+    border-top: 1px solid var(--color-gray-2);
+    border-right: 1px solid var(--color-gray-2);
+    border-bottom: 1px solid var(--color-gray-2);
+    border-left: 1px solid var(--color-white);
+}
+
+#sidebar .btn-search-seminovos:hover,
+#sidebar .btn-search-seminovos:active{
+    border-top: 1px solid var(--color-hover);
+    border-right: 1px solid var(--color-hover);
+    border-bottom: 1px solid var(--color-hover);
+    border-left: 1px solid var(--color-white);
+    color: var(--color-hover);
+}
+
+#accordionMarcas .accordion-button{
+    font-size: var(--font-small);
+    background-color: var(--color-gray-3);
+    padding: 8px 22px;
+}
+
+#inputValormax,
+#inputValormin{
+    border-bottom: 2px solid var(--color-gray-2) !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0;
+    
+}
+
+.list-group li{
+    background-color: var(--color-white);
+}
+
+#cardModelo{
+    font-weight: var(--font-bold);
+    font-size: var(--font-h3);
+}
+
+.card-modelo{
+    background-color: var(--color-gray-3);
+    margin-bottom: 20px;
+}
+
+.card-modelo-img{
+    width: 100%;
+    min-height: 220px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card-modelo img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.card-modelo:hover img {
+    transform: scale(1.2);
+    border-radius: 4px 4px 0 0;
+}
+
+.share{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: var(--color-white);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.share:hover{
+    background-color: var(--color-hover) !important;
+    color: var(--color-white);
+}
+
+.garantia{
+    position: absolute;
+    width: 100%;
+    background-color: var(--opacity-black-2);
+    color: var(--color-white);
+    bottom: 0;
+    z-index: 1;
+}
+
+#seminovosPopulares{
+    max-width: 720px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+    color: var(--color-gray-0);
+    text-align: center;
+}
+
+#modeloContato{
+    border: 1px solid var(--color-gray-2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#seminovosStats{
+    border: 1px solid var(--color-gray-2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.list-stats{
+    list-style:square;
+    padding-left: 18px;
+    color: var(--color-gray-0);
+}
+
+
+#vermelho{background-color: red;}
+#preto{background-color: black;}
+#branco{background-color: white;}
+#perolado{background-color: #FFF8DA;}
+#grafite{background-color: dimgrey;}
+#azul{background-color: blue;}
+#prata{background-color: gainsboro;}
+#verde{background-color: green;}
+#dourado{background-color: goldenrod;}
+#roxo{background-color: purple;}

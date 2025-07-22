@@ -1,0 +1,364 @@
+#modeloVersoes{
+    background-image: url(/img/bg-triangle-gray-3.svg);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+}
+
+#modeloCotacao{
+    background-color: var(--color-gray-3);
+}
+
+#modeloGaleria{
+    background-color: var(--color-gray-3);
+    background-image: url(/img/bg-triangle-gray-2.svg);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#mainGaleria{
+    position: relative;
+    margin: 5px;
+}
+
+#btnZoom{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.select-pic img{
+    height: 115px;
+    margin: 5px;
+}
+
+.select-pic img:hover{
+    opacity: .5;
+}
+
+.send-row{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#hondaSensing{
+    background-color: var(--color-gray-2);
+    background-image: url(/img/bg-triangle-white.svg);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#myhondaConnect{
+    background-color: var(--color-white);
+}
+
+#hondaSensing .nav-link,
+#myhondaConnect .nav-link{
+    border: 0;
+    border-radius: 0;
+}
+
+#hondaSensing .nav-link:hover,
+#myhondaConnect .nav-link:hover{
+    color: var(--color-hover);
+}
+
+#hondaSensing .nav-link.active,
+#myhondaConnect .nav-link.active{
+    border-bottom: 2px solid var(--color-red);
+    background-color: transparent;
+}
+
+#modeloFichatecnica{
+    clear: both;
+    background-color: var(--color-gray-3);
+}
+
+#topNav{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.row-nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn-modelo{
+    font-size: 12px;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    text-align: left;
+    border-radius: 2px;
+    width: 100%;
+    height: 100px;
+    font-weight: var(--font-bold);
+    padding-top: 56px;
+    padding-left: 8px;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 6px #111;
+}
+
+.btn-modelo:hover{
+    border-color: var(--color-hover);
+}
+
+.banner-item{
+    position: relative;
+}
+
+.banner-item:first-child {
+    display: block;
+}
+
+.banner-item img{
+   z-index: 0;
+}
+
+.banner-item .content{
+    position: absolute;
+    z-index: 1;
+    padding-left: 90px;
+    max-width: 500px;
+    color: var(--color-white);
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 6px #111;
+}
+
+#btnCotacao,
+#btnTestdrive{
+    padding: 10px 0;
+}
+
+#btn1{background-image: url(/img/modeloBtn-1.webp);}
+#btn2{background-image: url(/img/modeloBtn-2.webp);}
+#btn3{background-image: url(/img/modeloBtn-3.webp);}
+#btn4{background-image: url(/img/modeloBtn-4.webp);}
+#btn5{background-image: url(/img/modeloBtn-5.webp);}
+#btn6{background-image: url(/img/modeloBtn-6.webp);}
+#btn7{background-image: url(/img/modeloBtn-7.webp);}
+
+.btn-modelo.active {
+    background-color: var(--color-red); /* Cor de fundo ativa */
+    border-color: var(--color-red); /* Cor da borda ativa */
+    color: var(--color-white); /* Cor do texto ativa */
+}
+
+.banner-item {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+.banner-item:not(.d-none) {
+    transform: translateX(0);
+}
+
+/* VERSÕES */
+#modelVersoes{
+    background-color: var(--color-gray-3);
+    justify-content: center;
+    display: flex;    
+}
+
+.btn-versao{
+    font-weight: var(--font-bold);
+    color: var(--color-gray-0);
+}
+
+.btn-versao.active{
+    background-color: var(--color-gray-0);
+    color: var(--color-white);
+}
+
+.btn-versao:hover{
+    color: var(--color-hover);
+}
+
+#colorNav{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-color{
+    width: 28px !important;
+    height: 28px !important;
+    border: 2px solid var(--color-gray-0) !important;
+    border-radius: 1px;
+    opacity: 1 !important;
+}
+
+.btn-color.active{
+    border: 2px solid var(--color-red) !important;
+}
+
+#btnColor1{background-color: var(--model-branco-tafeta);}
+#btnColor2{background-color: var(--model-branco-topazio);}
+#btnColor3{background-color: var(--model-prata-platinum);}
+#btnColor4{background-color: var(--model-cinza-grafeno);}
+#btnColor5{background-color: var(--model-azul-cosmico);}
+#btnColor6{background-color: var(--model-cinza-basalto);}
+#btnColor7{background-color: var(--model-preto-cristal);}
+#btnColor8{background-color: var(--model-vermelho-mercurio);}
+
+#carouselModelos .carousel-caption{
+    color: var(--color-gray-1);  
+    bottom: 2rem;
+}
+
+#carouselModelos{
+    height: 450px;
+}
+
+#carouselModelos .carousel-item{
+    height: 450px;
+}
+
+.versao-box{
+    background-color: var(--color-gray-3);
+    border: 1px solid var(--color-red);
+    border-radius: 8px;
+}
+
+.versao-list {
+    list-style: none; /* Remove o marcador padrão */
+    padding-left: 0; /* Remove o recuo padrão do marcador */
+  }
+  
+  .versao-list li {
+    padding: 10px 10px 10px 30px;
+    border-bottom: 1px dotted var(--color-red);
+    position: relative;
+  }
+  
+  .versao-list li::before {
+    content: ''; /* Adicione um pseudo-elemento ::before para a imagem do marcador */
+    background-image: url(/img/list-style-car.svg); /* Sua imagem de marcador */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+  
+    /* Aumente o espaço entre o marcador e o texto em 10px */
+    margin-right: 10px; /* Aumenta o espaço à direita do marcador */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px; /* Largura desejada para a imagem do marcador */
+    height: 20px; /* Altura desejada para a imagem do marcador */
+  }
+  
+.footer-nav{
+    display: flex;
+    justify-content: end;
+}  
+
+#selosPremios{
+    background-color: var(--color-white);
+}
+
+/* Fica Tecnica */
+#modeloFichatecnica{
+    display: flex;
+    flex-direction: column;
+} 
+
+#parentVerticalTab2 {
+    flex: 1;
+}
+
+.ficha-list{
+    list-style: none;
+}
+
+.ficha-list li{
+    padding: 10px;
+}
+
+.ficha-list li:nth-child(odd) {
+    background-color: var(--color-gray-3);
+}
+  
+.ficha-list li:nth-child(even) {
+    background-color: var(--color-bg);
+}
+
+
+/*Condições Exclusiva*/
+#condicoesExclusivas{
+    background-color: var(--color-gray-1);
+}
+
+
+@media screen and (max-width: 575px) { 
+    #btnTestdrive{
+        margin-bottom: 20px;
+    }
+
+    .btn-modelo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .content h1{
+        font-size: var(--font-normal);
+    }
+
+    .banner-item .content{
+        top: 240px;
+        padding-left: 15px;
+    }
+
+    .nav-item{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link{
+        width: 100%;
+    }
+
+    #hondaSensing .nav-link.active, 
+    #myhondaConnect .nav-link.active{
+        background-color: var(--color-red);
+        border-color: var(--color-hover);
+        color: var(--color-white);
+
+    }
+
+    #carouselModelos{
+        height: 300px;
+    }
+
+    #carouselModelos .carousel-item{
+        height: 300px;
+    }
+
+    #carouselModelos .carousel-caption{
+        bottom: 2rem;
+    }
+
+    .send-row{
+        display: block;        
+    }
+
+    .send-row button,
+    .send-row img{
+        width: 100%;
+    }
+
+    .slick-arrow{
+        z-index: 0;
+        width: 0;
+        background-color: transparent;
+    }
+
+    .slick-next{
+        background: transparent !important;
+    }
+}

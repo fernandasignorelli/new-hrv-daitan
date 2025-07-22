@@ -1,0 +1,118 @@
+/* Início, A Daitan */
+#aboutDaitan h2{
+    text-align: right;
+}
+
+#capaDaitan{
+    background-image: url(../img/capa-daitan.webp);
+}
+
+#capaDaitan .container{
+    height: 100%;
+}
+
+.capa{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc(90vh - 160px);
+    position: relative;
+}
+
+#capaText{
+    position: absolute;
+    bottom: 50px;
+}
+
+#capaIcon{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+.btn-daitan{
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    text-align: right;
+    padding: 20px;
+    color: var(--color-white);
+    font-weight: var(--font-bold);
+    position: relative;
+}
+
+.btn-daitan i{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+
+.btn-daitan:hover{
+    animation: hoverAnimation 0.3s ease forwards;
+    color: var(--color-white);
+}
+
+#historiaDaitan .carousel-caption{
+    background-color: var(--opacity-black);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5px 0 15px 0;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        background-size: 100%;
+        background-position: center right;
+    }
+    100% {
+        background-size: 120%;
+        background-position: center right;
+    }
+}
+
+#btnBlog{
+    background-image: url(../img/btnBlog.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#btnVideos{
+    background-image: url(../img/btnVideo.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btnUnihonda{
+    background-image: url(../img/btnUnihonda.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fim, A Daitan */
+
+
+@media screen and (max-width: 575px) {
+    #aboutDaitan h2{
+        text-align: center;
+    }
+
+    #capaDaitan.capa{
+        background-position: 25% !important;
+    }
+
+    #capaText{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .btn-daitan{
+        margin: 10px 0;
+    }
+}

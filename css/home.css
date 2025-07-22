@@ -1,0 +1,387 @@
+/* ---- BANNER ---- */
+#slidesDaitan .carousel-control-next-icon,
+#slidesDaitan .carousel-control-prev-icon{
+    background-color: var(--color-red);     
+    padding: 20px;
+    border-radius: 8px;   
+}
+
+#slidesDaitan .carousel-indicators{
+    position: relative;
+    padding: 8px;
+}
+
+#slidesDaitan .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    border: 1px solid var(--color-gray-2);
+    opacity: 1;
+}
+
+#slidesDaitan .carousel-indicators .active{
+    background-color: var(--color-red);
+}
+
+/* Tenho Interesse */
+#tenhoInteressemob{
+    display: none;
+}
+
+#tenhoInteresse{
+    width: 100%;
+    background-color: var(--opacity-black);
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 700px;
+}
+
+#tenhoInteresse .form-check-label{
+    font-size: var(--font-small);  
+    color: var( --color-gray-3);  
+}
+
+#tenhoInteresse .form-select{
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-red);
+    background-color: transparent;
+    color: var(--color-gray-3);  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-image: url('../img/arrow-select.svg'); /* Substitua com a URL da sua imagem de seta personalizada */
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#tenhoInteresse .form-select option{
+    color: var(--color-black);
+    box-shadow: var(--color-red);
+}
+
+#tenhoInteresse .form-control{
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-red);
+    background-color: transparent;
+}
+
+#tenhoInteresse .form-floating>label{
+    color: var(--color-gray-3);  
+}
+
+#tenhoInteresse .form-floating>label::after{
+    background-color: transparent;
+}
+
+.form-check-input:checked{
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+
+/* ---- Início, Modelos ---- */
+#modelos{
+    background: url(../img/bg-modelos.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+#modelos h1{
+    color: var(--color-gray-0);
+}
+
+#modelosFiltro .filter-content{
+    margin: 30px 15px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#modelosFiltro .filter-item{   
+    width: 100px;
+    text-align: center;    
+    margin: 0 15px;
+}
+
+#modelosFiltro .filter-item a{
+    color: var(--color-gray-2);
+    text-decoration: none;    
+    padding: 10px 20px;
+    font-weight: var(--font-bold);
+}
+
+#modelosFiltro .filter-item a:hover{
+    border-bottom: 3px solid var(--color-red);
+}
+
+#modelosFiltro .filter-item .active{
+    color: var(--color-gray-0);
+    border-bottom: 3px solid var(--color-red);
+}
+
+#modelosContent button{
+    width: 200px;
+}
+
+.modelo-logo{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo-logo img{
+    width: 100px;
+}
+
+#logo-accord{
+    width: 140px !important;
+}
+
+.modelo-hover:hover{
+    animation: aumentarEscala 0.3s ease forwards;
+}
+
+@keyframes aumentarEscala {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+
+
+#modelosContent .preco{
+    font-size: var(--font-h3);
+    color: var(--color-red);
+    font-weight: var(--font-bold);
+}
+
+/* ---- Fim, Modelos ---- */
+
+/* ---- Início, Ofertas ---- */
+#ofertas{
+    background-color: var(--color-gray-3);
+}
+
+.ofertas-precos{
+    font-size: var(--font-h3);
+    font-weight: var(--font-bold);
+    color: var(--color-red);
+}
+
+.card-ofertas .card-title{
+    font-weight: var(--font-bold);
+    color: var(--color-gray-0);
+}
+
+/* ---- Fim, Ofertas ---- */
+
+/* ---- Início, Test Drive ---- */
+#testDrive{
+    color: var(--color-gray-3);
+    background: url(../img/test-drive.webp) var(--color-black) top right no-repeat;
+    background-size: contain; 
+    height: 340px;  
+}
+
+#testDrive .container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 340px; 
+}
+
+#testDrive h1{
+    text-transform: uppercase;
+}
+
+#testDrive button{
+    width: 250px;
+}
+
+#testDrive-capa{
+    display: none;
+}
+
+/* ---- Fim, Test Drive ---- */
+
+/* ---- Início, Serviços ---- */
+#servicos{
+    background-color: var(--color-white);
+}
+
+#servicos h2{
+    color: var(--color-red);
+    margin-bottom: 30px;
+    font-weight: var(--font-bold);
+}
+
+#servicos p{
+    color: var(--color-gray-0);
+}
+
+#servicos img{
+    border-left: 8px solid var(--color-red);
+}
+
+.servicos-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-btn button{
+    margin: 0 5px;
+}
+
+/* ---- Fim, Serviços ---- */
+
+/* ---- Início, Acessórios ---- */
+#acessorios{
+    background-color: var(--color-gray-3);
+}
+
+#acessorios .card{
+    border: 2px solid var(--color-white);    
+}
+
+#acessorios .card button{
+    float: right;
+}
+
+#acessorios .card-header{
+    background-color: var(--color-white);
+    color: var(--color-red);
+    font-size: var(--font-normal);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+}
+/* ---- Fim, Acessórios ---- */
+
+/* ---- Início, Blog ---- */
+.blog-thumb{
+    border-radius: 8px;
+}
+
+.blog-title{
+    font-size: var(--font-h3);
+    font-weight: var(--font-bold);
+    color: var(--color-gray-0);
+    margin: 10px 0;
+}
+
+.blog-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-share{
+    text-decoration: none;
+}
+
+/* ---- Fim, Blog ---- */
+
+@media screen and (max-width: 575px) {
+    #slidesDaitan .carousel-item {           
+        position: relative;
+        width: 100%;
+        height: 70vh;
+    }
+
+    #tenhoInteresse{
+        display: none;
+    }
+
+    #tenhoInteressemob{
+        position: absolute;
+        display: block;
+        margin: 10px auto;
+        bottom: 45px;
+    }
+
+    #tenhoInteressemob button{
+        width: 280px;
+    }
+
+    #modelosContent button{
+        width: 100%;
+    }
+
+    #testDrive,
+    #testDrive .container{
+        background: var(--color-black);
+        height: auto;
+    }
+   
+    #testDrive button{
+        width: 100%;
+    }
+
+    #testDrive h1{
+        text-align: center;
+    }
+
+    #testDrive h2{
+        text-align: center;
+    }
+
+    #testDrive-capa{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #servicos img{
+        border-bottom: 8px solid var(--color-red);
+        border-left: 0px solid;
+        margin-bottom: 30px;
+    }
+
+    .nav-btn{
+        display: block;       
+    }
+    
+    .nav-btn button{
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    #acessorios .col-sm-12{
+        margin: 15px 0;
+    }
+
+    .blog-card .btn{
+        width: 100%;
+    }
+
+    #footerEndereco{
+        padding: 12px;
+    }
+
+}
+
+

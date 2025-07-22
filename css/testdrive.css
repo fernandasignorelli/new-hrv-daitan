@@ -1,0 +1,13 @@
+#capaTestdrive {
+    background-image: url(../img/capa-testdrive-crv.webp);
+}
+
+#testdriveVantagens {
+    height: 620px;
+}
+
+@media screen and (max-width: 575px) {
+    #testdriveVantagens {
+        height: 100%;
+    }
+}

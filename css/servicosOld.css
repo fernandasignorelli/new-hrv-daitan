@@ -1,0 +1,423 @@
+#capaServicos{
+    background-image: url(../img/servicos.webp);
+}
+
+#revisaoSwitches{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#revisaoSwitches .form-switch:first-child{
+    margin-right: 50px;
+}
+
+.revisao-list{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.revisao-list li{
+    padding: 18px 15px;
+    border: 1px solid var(--color-gray-2);
+    color: var(--color-gray-0);
+    font-size: 18px;
+}
+
+.preco{
+    font-size: var(--font-h1);
+}
+
+.cents{
+    font-size: var(--font-h3);
+}
+
+.val-prestacao{
+    font-size: var(--font-h3);
+    font-weight: var(--font-bold);
+}
+
+#navRevisao{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#navRevisao .btn{
+    margin: 0 5px;
+    width: 220px;
+}
+
+/* Revisão Programada */
+#btn-accord{
+    background-image: url(../img/revisao/btnAccord.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-accord2{
+    background-image: url(../img/revisao/btnAccord2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-city{
+    background-image: url(../img/revisao/btnCity.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-city2{
+    background-image: url(../img/revisao/btnCity2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic{
+    background-image: url(../img/revisao/btnCivic.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic2{
+    background-image: url(../img/revisao/btnCivic2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-civic3{
+    background-image: url(../img/revisao/btnCivic3.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-crv{
+    background-image: url(../img/revisao/btnCrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-fit{
+    background-image: url(../img/revisao/btnFit.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-hrv{
+    background-image: url(../img/revisao/btnHrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-hrv2{
+    background-image: url(../img/revisao/btnHrv2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-wrv{
+    background-image: url(../img/revisao/btnWrv.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ACESSORIOS */
+#acessorios{
+    background-color: var(--color-white);
+}
+
+#acessoriosSort{
+    width: 100%;
+    border: 1px solid var(--color-gray-2);
+    border-radius: 4px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.acessorios-sort{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: var(--font-small);  
+    text-align: end; 
+}
+
+.acessorios-sort p{
+    width: 280px;
+    margin-right: 8px;
+}
+
+.acessorios-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.acessorios-btn{
+    border-radius: 4px;
+    margin: 10px;
+    width: 200px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-gray-2);
+    color: var(--color-gray-0);
+}
+
+.acessorios-btn:active,
+.acessorios-btn.active,
+.acessorios-btn:hover{
+    border-color: var(--color-red);
+    color: var(--color-red);
+}
+
+#acessoriosPecas .card{
+    border: 1px solid var(--color-gray-2);
+}
+
+.card-produto{
+    font-size: 14px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-acessorios{
+    width: 100%;
+}
+
+.card-preco{
+    font-size: 20px;
+    color: var(--color-red);
+    font-weight: var(--font-bold);
+}
+
+#acessoriosPecas .card-modelo-img{
+    width: 100%;
+    min-height: auto;    
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#acessoriosPecas .card-modelo img{
+    width: 100%;
+    height: 196px !important;
+    transition: 0.5s all ease-in-out;
+}
+
+#acessoriosPecas .card-modelo:hover img {    
+    border-radius: 4px 4px 0 0;
+}
+
+/* Acessorios Slide */
+/* Slider */
+#acessoriosPecas .slick-list{
+    margin: 0 50px;
+}
+
+#acessoriosPecas .slick-slide {
+    margin: 0px 10px;
+  }
+  
+#acessoriosPecas   .logo-carousel {
+    overflow: inherit;
+  }
+  
+#acessoriosPecas   .slick-slide img {
+    width: 100%;
+    margin: 0;
+  }
+  
+  #acessoriosPecas .slick-track::before,
+  #acessoriosPecas .slick-track::after {
+    display: table;
+    content: '';
+  }
+  
+  #acessoriosPecas .slick-track::after {
+    clear: both;
+  }
+  
+  #acessoriosPecas .slick-track {
+    padding: 1rem 0;
+  }
+  
+  #acessoriosPecas .slick-loading .slick-track {
+    visibility: hidden;
+  }
+  
+  #acessoriosPecas .slick-slide.slick-loading img {
+    display: none;
+  }
+  
+  #acessoriosPecas .slick-slide.dragging img {
+    pointer-events: none;
+  }
+  
+  #acessoriosPecas .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+  
+  #acessoriosPecas .slick-arrow {
+    position: absolute;
+    top: 40%;
+    background: url(../img/angle-left-solid-btn.svg) center no-repeat;
+    color: var(--color-red);
+    border: none;
+    width: 45px;
+    height: 45px;
+    text-indent: -10000px;
+    margin-top: 0px;
+    z-index: 99;
+  }
+  
+  #acessoriosPecas .slick-arrow.slick-next {
+    right: 0px;
+    transform: rotate(180deg);
+  }
+  
+  #acessoriosPecas .slick-arrow.slick-prev {
+    left: 0px;
+  }
+
+  /* Acessorio Single */
+  #acessorioSingle h1{
+    font-size: 22px;
+    color: var(--color-red);
+    font-weight: var(--font-bold);
+  }
+
+  #acessorioSingle .preco{
+    font-size: 32px;
+  }
+
+  #acessorioSingle .form{
+    border: 1px solid var(--color-gray-2);
+  }
+
+  #pecasAcessorios{
+    & .btn{
+        width: 300px;
+    }
+  }
+
+  #agendaFacil{
+    display: flex;
+  }
+
+  .btn-select{
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+  }
+
+  .btn-select:hover,
+  .btn-select:active{
+    border: var(--bs-border-width) solid var(--bs-border-color);
+  }
+
+  .btn-select:focus{
+    border-color: #86B7FE;
+  }
+
+  .scrollable-menu{
+    max-height: 350px;
+    overflow-y: auto;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    #agendaFacil{
+        display: block;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 40%;
+        background: url(../img/angle-left-solid-btn.svg) center no-repeat;
+        color: var(--color-red);
+        border: none;
+        width: 45px;
+        height: 45px;
+        text-indent: -10000px;
+        margin-top: 0px;
+        z-index: 99;
+      }
+      
+      .slick-arrow.slick-next {
+        right: 0px;
+        transform: rotate(180deg);
+      }
+      
+      .slick-arrow.slick-prev {
+        left: 0px;
+      }
+
+
+    .slick-arrow.slick-next {
+      right: 0px;
+      transform: rotate(180deg);
+    }
+    
+    .slick-arrow.slick-prev {
+      left: 0px;
+    }
+  }
+  
+
+@media screen and (max-width: 575px) { 
+    #revisaoSwitches{
+        display: block;
+    }
+
+    #revisaoSwitches .form-switch:first-child{
+        margin-right: 0;
+    }
+
+    #navRevisao{
+        display: block;
+    }
+
+    #navRevisao .btn{
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .acessorios-nav{
+        display: block;        
+    }
+
+    .acessorios-btn{
+        width: 100%;
+        margin: 5px 0;
+    }    
+
+    #acessoriosPecas .slick-next{
+        background: url(../img/angle-left-solid-btn.svg) center no-repeat !important;
+    }
+
+    #pecasAcessorios{
+        & .btn{
+            width: 100%;
+        }
+      }
+}
+
+#revDados p,
+#revCar p{
+    color: var(--color-gray-0);
+}
+

@@ -1,0 +1,20 @@
+#videosHonda{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#videosHonda a{
+    color: var(--color-gray-3);
+}
+
+#videosHonda .breadcrumb{
+    --bs-breadcrumb-divider-color: var(--color-gray-3);
+}
+
+#videosHonda .breadcrumb-item.active{
+    color: var(--color-white);
+}
+
+#videosSidebar a{
+    text-decoration: none;
+}

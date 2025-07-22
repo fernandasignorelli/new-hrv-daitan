@@ -1,0 +1,528 @@
+@charset "UTF-8";
+
+@import url(ubuntu.css?v=0.15);
+@import url(header.css?v=0.15);
+@import url(home.css?v=0.16);
+@import url(ofertas.css?v=0.15);
+@import url(footer.css?v=0.16);
+@import url(daitan.css?v=0.15);
+@import url(blog.css?v=0.15);
+@import url(forms.css?v=0.16);
+@import url(vendas.css?v=0.15);
+@import url(servicos.css?v=1.10);
+@import url(consorcio.css?v=0.16);
+@import url(modelos.css?v=0.18);
+@import url(testdrive.css?v=0.15);
+@import url(universo.css?v=0.15);
+@import url(videos.css?v=0.15);
+@import url(seminovos.css?v=0.16);
+@import url(galeria.css?v=0.15);
+
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+/* Font Family */
+*{font-family: 'Ubuntu', sans-serif;}
+
+
+
+:root{
+    /* Color */
+    --color-red: #cc0000;
+    --color-hover: #831C1C;
+    --color-dark-gray: #272727;
+    --color-gray-0: #777986;
+    --color-gray-1: #5c5c5c;
+    --color-gray-2: #b2b2b2;
+    --color-gray-3: #f1f2f2;
+    --color-white: #ffffff;
+    --color-bg: #EBEBEB;
+    --color-black: #101223;
+    --color-green: #25D366;
+    --color-facebook: #4267B2;
+    --opacity-black: rgba(40, 42, 58, .85);
+    --opacity-black-2: rgba(40, 42, 58, .45);
+    --shadow: rgba(40, 42, 58, .25);
+
+    /* Model Colors */
+    --model-branco-tafeta: #fdfeff;
+    --model-branco-topazio: #fcf9ea;
+    --model-prata-platinum: #95a3a8;
+    --model-cinza-grafeno: #B9C9D8;
+    --model-azul-cosmico: #4e7688;
+    --model-cinza-basalto: #707a80;
+    --model-preto-cristal: #0c090d;
+    --model-vermelho-mercurio: #611719;
+    --model-blue-pearl: #179ce8;
+    --model-rallye-red: #e40c10;
+    --model-azul-aurora: #577984;
+
+    /* Fonts */
+    --font-small: 13px;
+    --font-normal: 16px;
+    --font-h3: 24px;
+    --font-h2: 30px;
+    --font-h1: 36px;
+    --font-banner: 48px;
+    --font-bold: 700;
+    --font-regular: 400;
+}
+
+.color-red{
+    color: var(--color-red) !important;
+}
+
+.color-white{
+    color: var(--color-white) !important;
+}
+
+.color-gray{
+    color: var(--color-gray-1) !important;
+}
+
+.color-gray-0{
+    color: var(--color-gray-0) !important;
+}
+
+.color-green{
+    color: var(--color-green) !important;
+}
+
+.color-dark-gray{
+    color: var(--color-dark-gray) !important;
+}
+
+.text-shadow{
+    text-shadow: 0 1px 2px var(--color-black);
+}
+
+.bg-white{
+    background-color: var(--color-white) !important;
+}
+
+.bg-gray-3{
+    background-color: var(--color-gray-3) !important;
+}
+
+.bg-gray-0{
+    background-color: var(--color-gray-0) !important;
+}
+
+.bg-dark-gray{
+    background-color: var(--color-dark-gray);
+}
+
+a{
+    color: var(--color-red);
+}
+
+a:hover, 
+a:active{
+    color: var(--color-hover);
+}
+
+small{
+    font-size: var(--font-small);
+}
+
+h1{
+    font-size: var(--font-h1);
+}
+
+h2{
+    font-size: var(--font-h2);
+}
+
+h3{
+    font-size: var(--font-h3);
+}
+
+.h1estilo{
+    color: var(--color-gray-0);
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.h1estilo b{
+    font-weight: 700;
+}
+
+.h1estilo:after{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: var(--color-red);
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h2estilo{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.h2estilo span{
+    margin: 0 15px 0 0;
+    color: var(--color-red);
+}
+
+.h2estilo::after {
+    background: var(--color-gray-2) !important; 
+    height: 2px; 
+    flex: 1; 
+    content: '';
+}
+
+
+b{font-weight: var(--font-bold);}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.dropdown-item{
+    color: var(--color-gray-0);
+}
+
+.dropdown-item:hover{
+    color: var(--color-white);
+}
+
+/* Hacks */
+.mobile{display: none;}
+.desktop{display: block;}
+
+.img-center{
+    max-width: 750px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.r-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+}
+
+.equal-height-cards {
+    display: flex;
+}
+
+.equal-height-cards .col-sm-12 {
+    flex-direction: column;
+}
+
+.equal-height-card {
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.no-text-decoration{
+    text-decoration: none;
+}
+
+.no-text-decoration:hover{
+    text-decoration: underline;
+}
+
+.table-valign{
+    vertical-align: middle;
+}
+
+.modal-dialog{
+    max-width: 900px;
+}
+
+.modal-open{
+    padding-right: 0;
+}
+
+.badge{
+    background-color: var(--color-gray-3);
+    color: var(--color-red);
+    width: auto;
+    padding: 15px 8px;
+    cursor: pointer;
+    margin: 6px 3px;
+    border: 1px solid var(--color-gray-2);
+    text-decoration: none;
+}
+
+.badge:first-child{
+    margin-left: 0;
+}
+
+.badge:hover{
+    background-color: var(--color-gray-0);
+    color: var(--color-white);
+}
+
+#erro404 h1{
+        font-size: 80px;
+        width: 100%;
+}
+
+.importante{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+
+.tag{
+    padding: 2px 5px;
+    background-color: #D2D4DA;
+    color: var(--color-black);
+    width: auto;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-size: var(--font-small);
+}
+
+.tag:first-child{
+    margin-left: 0 !important;
+}
+
+
+/* VIDEOS */
+.video-container {position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 8px;
+}
+
+/* Botões */
+.btn-primary{
+    --bs-btn-bg: #cc0000;
+    --bs-btn-border-color: #cc0000;
+    --bs-btn-hover-bg: #831C1C;
+    --bs-btn-hover-border-color: #831C1C;
+    --bs-btn-active-bg: #cc0000;
+    --bs-btn-active-border-color: #cc0000;
+}
+
+.btn-outline-primary{
+    --bs-btn-color: #cc0000;
+    --bs-btn-border-color: #cc0000;
+    --bs-btn-hover-bg: #831C1C;
+    --bs-btn-hover-border-color: #831C1C;
+    --bs-btn-active-bg: #cc0000;
+    --bs-btn-active-border-color: #cc0000;
+}
+
+.btn-waze{
+    width: 150px;
+    --bs-btn-color: var(--color-white);
+    --bs-btn-bg: #33CCFF;
+    --bs-btn-border-color: #33CCFF;
+    --bs-btn-active-bg: #33CCFF;
+    --bs-btn-active-bg: #33CCFF;
+    --bs-btn-active-border-color: #33CCFF;
+}
+
+.btn-googlemaps{
+    width: 150px;
+    --bs-btn-color: var(--color-white);
+    --bs-btn-bg: #404252;
+    --bs-btn-border-color: #404252;
+    --bs-btn-hover-bg: #191C35;
+    --bs-btn-hover-border-color: #191C35;
+    --bs-btn-active-bg: #404252;
+    --bs-btn-active-border-color: #404252;
+}
+
+.btn-regiao{
+    background-color: var(--color-bg);
+    font-weight: bold;
+    border: 0px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.btn-regiao:hover,
+.btn-regiao:active{
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.btn-outline-facebook{
+    --bs-btn-color: var(--color-facebook);
+    --bs-btn-border-color: var(--color-facebook);
+    --bs-btn-hover-bg: var(--color-facebook);
+    --bs-btn-hover-border-color: var(--color-facebook);
+    --bs-btn-active-bg: var(--color-facebook);
+    --bs-btn-active-border-color: var(--color-facebook);
+    --bs-btn-hover-color: var(--color-white);
+
+}
+
+.btn-share{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-3);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.share-facebook{
+    color: var(--color-facebook);
+}
+
+.share-facebook:hover,
+.share-facebook:active{
+    background-color: var(--color-facebook);
+    color: var(--color-white);
+}
+
+.share-twitter{
+    color: var(--color-dark-gray);
+}
+
+.share-twitter:hover,
+.share-twitter:active{
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+}
+
+.share-whatsapp{
+    color: var(--color-green);
+}
+
+.share-whatsapp:hover,
+.share-whatsapp:active{
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+#postLink{
+    background-color: var(--color-gray-3);
+    color: var(--color-dark-gray);
+    font-style: italic;
+}
+
+.regiao-link{
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+#btn-360{
+    width: 120px;  
+}
+
+
+
+.footer-endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-waze:hover,
+.btn-waze:active{
+    color: var(--color-white) !important;
+    background-color: #0D81A8;
+    border-color: #0D81A8;
+}
+
+.btn-googlemaps:hover,
+.btn-googlemaps:active{
+    color: var(--color-white) !important;
+}
+
+.btn-whatsapp{
+    --bs-btn-color: #f1f2f2;
+    --bs-btn-bg: #25D366;
+    --bs-btn-border-color: #25D366;
+    --bs-btn-hover-color: #f1f2f2;
+    --bs-btn-hover-bg: #075E54;
+    --bs-btn-hover-border-color: #075E54;
+    --bs-btn-active-bg: #25D366;
+    --bs-btn-active-bg: #25D366;
+    --bs-btn-active-border-color: #25D366;
+}
+
+.dropdown-toggle::after{
+    /*color: var(--color-red);*/
+    content: "\f078"; /* Código Unicode do ícone desejado do Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Nome da família de fontes do Font Awesome */
+    font-weight: 900; /* Peso da fonte (pode variar dependendo do ícone) */
+    margin-left: 2px; /* Espaçamento entre o texto e o ícone */
+    border-top: 0;
+    vertical-align: 0;
+}
+
+option[value=""]:hover{
+    background-color: var(--color-red);
+}
+
+/* Accordion */
+.accordion-button{
+    color: var(--color-gray-0);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--color-gray-3);
+    color: var(--color-red);
+}
+
+
+
+/* Políticas de Privacidade */
+#politicasPrivacidade{
+    color: var(--color-gray-0);
+}
+
+#politicasPrivacidade p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#politicasPrivacidade ul li{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--color-gray-0);
+}
+
+@media screen and (max-width: 575px) { 
+    .mobile{display: block;}
+    .desktop{display: none !important;}
+
+    .r-flex{
+        width: 100%;
+    }
+}
+
+.box-outline-gray{
+    border: 1px solid var(--color-gray-2);
+    padding: 20px;
+    border-radius: 4px;
+}

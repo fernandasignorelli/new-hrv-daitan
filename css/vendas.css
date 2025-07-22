@@ -1,0 +1,94 @@
+#capaVendas{
+    background-image: url(../img/capa-vendas.webp);
+}
+
+.card-vendas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--color-gray-3);
+}
+
+.img-vendas{
+    max-width: 530px;
+}
+
+.content-vendas{
+    padding: 20px;
+}
+
+#tabPrecos{
+    background-color: var(--color-gray-3);
+}
+
+#tabPrecos .nav-link{
+    border: 0;
+    border-radius: 0;
+}
+
+#tabPrecos .nav-link:hover{
+    color: var(--color-hover);
+}
+
+#tabPrecos .nav-link.active{
+    border-bottom: 2px solid var(--color-red);
+    background-color: transparent;
+}
+
+#btnIsencao{
+    display: flex;
+}
+
+#btnIsencao button,
+#btnIsencao2 button,
+#btnIsencao3 button{
+    margin: 0 5px;
+    width: 200px;
+}
+
+#btnIsencao button.active,
+#btnIsencao2 button.active,
+#btnIsencao3 button.active{
+    background-color: var(--color-red) !important;
+    color: var(--color-white) !important;
+    border: 1px solid var(--color-red) !important;
+}
+
+.btn-isencao{
+    border: 1px solid var(--color-red) !important;
+    color: var(--color-red) !important;
+}
+
+.btn-isencao:hover{
+    background-color: var(--color-hover) !important;
+    border-color: var(--color-hover) !important;
+    color: var(--color-white) !important;
+}
+
+@media screen and (max-width: 575px) { 
+    .card-vendas{
+        display: block;
+    }
+
+    .img-vendas{
+        width: 100%;
+    }
+
+    .btn-vendas{
+        width: 100%;
+    }
+
+    #btnIsencao,
+    #btnIsencao2,
+    #btnIsencao3{
+        display: block !important;
+    }
+
+    #btnIsencao .btn-isencao,
+    #btnIsencao2 .btn-isencao,
+    #btnIsencao3 .btn-isencao{
+        margin: 5px 0;
+        width: 100%;
+    }
+}
