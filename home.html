@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WW6LLMBQ');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Honda Daitan - A maior concession&#xE1;ria Honda do Brasil</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css?v=0.30">
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css?v=0.30">
+    <link rel="stylesheet" href="/lib/vertical-responsive/css/easy-responsive-tabs.css?v=0.30">
+    <link rel="stylesheet" href="/css/style.css?v=0.30">
+    <!--<link rel="stylesheet" href="/lib/flickity/flickity.css?v=0.30">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/lib/gallery/gallery.css?v=0.30">
+    <link rel="stylesheet" href="/lib/slick/slick.css?v=0.30">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/v-money-customized@0.0.1/dist/v-money.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/maska@1.5.1/dist/maska.js"></script>
+
+    <script>
+        const api = axios.create({ baseURL: '/v1/api/' });
+        const apiVagas = axios.create({ baseURL: 'https://servicos.empresasremaza.com.br/api/vagas/' });
+        const baseURL = window.location.protocol + "//" + window.location.host;
+    </script>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/@microsoft/azsearch.js@0.0.21/dist/AzSearch.bundle.js"></script>-->
+
+
+    <meta name="robots" content="index,follow">
+    <meta name="keywords"
+        content="Honda FIT, New FIT, Honda Civic, New Civic, Civic SI, Honda City, New City, New City Hatchback, Honda Accord, Honda CR-V, Semino">
+    <meta name="description" content="Honda Daitan - A maior concessionária Honda do Brasil">
+    <meta name="generator" content="Piranha CMS 10.3.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Honda Daitan - A maior concessionária Honda do Brasil">
+    <meta property="og:description" content="Honda Daitan - A maior concessionária Honda do Brasil">
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW6LLMBQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <div id="regiao"></div>
+        <script src="/vuejs/regiao.js?v=1.2"></script>
+
+        <div id="dvheader"></div>
+    </header>
+
+
+    <script>
+        function fn_noticias_home() {
+
+            $.ajax({
+                url: '/Cms/noticias_home',
+                type: 'POST',
+                success: function (result) {
+                    $('#dvNoticias').html(result);
+                }
+            });
+
+        }
+    </script>
+
+    <div id="carrossel"></div>
+    <script src="/vuejs/HomeCarrossel.js?v=1.8"></script>
+
+    <section id="modelos" class="py-5">
+        <div class="container">
+            <h1 class="h1estilo mb-4">Descubra o Honda <b>perfeito para você</b></h1>
+            <!--<div id="modelosFiltro" class="mb-5">
+              <div class="row">
+                <ul class="filter-content">
+                  <li class="filter-item">
+                    <a href="#" class="active">Todos</a>                
+                  </li>
+                  <li class="filter-item">
+                    <a href="#">Passeios</a>                
+                  </li>
+                  <li class="filter-item">
+                    <a href="#">SUV</a>                
+                  </li>
+                </ul>
+              </div>            
+            </div>-->
+            <div id="modelosContent">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/new-city-hb-touring" class="text-center"> <img
+                                    src="img/modelos/newcityhb.png?v=2" width="167" height="95"
+                                    class="modelo-hover d-block m-auto" alt="New City HatchBack">
+                                <div class="modelo-logo"> <img src="img/logos/new_city_hatchback.svg"
+                                        class="d-block m-auto" alt="Logo HR-V"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 117.500,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/new-city-hb-touring"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/new-city-touring" class="text-center"> <img
+                                    src="img/modelos/newcity.png?v=2" width="167" height="95"
+                                    class="modelo-hover d-block m-auto" alt="Modelo New City">
+                                <div class="modelo-logo"> <img src="img/logos/new_city.svg" class="d-block m-auto"
+                                        alt="Logo New City"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 117.500,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/new-city-touring"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/civic-advanced-hybrid" class="text-center"> <img
+                                    src="img/modelos/civic_2023.png" class="modelo-hover d-block m-auto"
+                                    alt="Modelo Civic Advanced Hybrid">
+                                <div class="modelo-logo"> <img src="img/logos/logo-civic-adv-hybrid.svg"
+                                        class="d-block m-auto" alt="Civic Advanced Hybrid"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 265.900,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/civic-advanced-hybrid"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/accord-hibrido" class="text-center"> <img
+                                    src="img/modelos/accord.webp" width="167" class="modelo-hover d-block m-auto"
+                                    alt="Accord Advanced Híbrido">
+                                <div class="modelo-logo"> <img src="img/logos/accord-adv-hyb.png" class="d-block m-auto"
+                                        alt="Accord Advanced Híbrido"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 332.400,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/accord-hibrido"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/new-hrv-touring" class="text-center"> <img
+                                    src="img/modelos/newhrv.png" width="167" height="95" class="modelo-hover d-block m-auto" alt="Modelo HR-V">
+                                <div class="modelo-logo"> <img src="img/logos/hrv_logo.png" class="d-block m-auto"
+                                        alt="Logo HR-V"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 156.100,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/new-hrv-touring"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/zrv-touring" class="text-center"> <img
+                                    src="img/modelos/zrv.webp" width="167" class="modelo-hover d-block m-auto"
+                                    alt="Modelo ZR-V">
+                                <div class="modelo-logo"> <img src="img/logos/zrv-logo.png" class="d-block m-auto"
+                                        alt="ZR-V"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 214.500,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/zrv-touring"> <i
+                                class="fa-solid fa-plus me-2"></i>
+                            Saiba Mais </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/crv-advanced-hybrid" class="text-center"> <img
+                                    src="img/modelos/crv/crv.webp" width="167" class="modelo-hover d-block m-auto"
+                                    alt="CR-V Advanced Hybrid">
+                                <div class="modelo-logo"> <img src="img/logos/crv-logo.png" class="d-block m-auto"
+                                        alt="CR-V"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 352.900,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="/crv-advanced-hybrid"> <i
+                                class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-block my-3"> <a href="/civic-type-r" class="text-center"> <img
+                                    src="img/modelos/type_r.png" class="modelo-hover d-block m-auto"
+                                    alt="Modelo Civic Type R">
+                                <div class="modelo-logo"> <img src="img/logos/civi-typeR-200x80.png"
+                                        class="d-block m-auto" alt="Civic Híbrido"> </div>
+                            </a> </div>
+                        <p class="text-center mb-1"> A partir de </p>
+                        <p class="preco text-center"> R$ 429.900,00 </p>
+                        <a class="btn btn-primary d-block m-auto" href="civic-type-r"> <i
+                                class="fa-solid fa-plus me-2"></i>
+                            Saiba Mais </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="emailHome"></div>
+    <script src="/vuejs/emailHome.js"></script>
+    <section id="testDrive"> <img id="testDrive-capa" src="/img/test-drive-mob.webp" alt="">
+        <div class="container">
+            <div class="py-5">
+                <h1>Agende seu <b>Test Drive</b></h1>
+                <h2 class="mb-3">Viva a experiência de dirigir um Honda!</h2>
+                <a href="/testdrive" class="btn btn-primary"> Agende aqui </a>
+            </div>
+        </div>
+    </section>
+    <section id="servicos">
+        <div class="container">
+            <div class="row my-4 servicos-row">
+                <div class="col-sm-12 col-md-6 col-lg-6"> <img src="/img/home-agenda.webp" class="w-100" alt=""> </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2>Faça o seu agendamento</h2>
+                    <p>A <b>Revisão Programada Daitan</b> oferece o melhor serviço para o seu Honda. Agende sua revisão,
+                        escolha a data e horário que preferir, e deixe seu carro na oficina sem demora. Nossos
+                        consultores
+                        técnicos estarão prontos para atendê-lo, enquanto você desfruta de um cafezinho.</p>
+                    <p>Se tiver alguma dúvida ou precisar reagendar, entre em contato com a nossa <a
+                            href="/agenda-facil">Central de Agendamento</a> da sua região.</p>
+                    <div class="nav-btn my-4">
+                        <button class="btn btn-primary" onClick="location.href='/agenda-facil'"> <i
+                                class="fa-solid fa-calendar me-2"></i> Agende aqui </button>
+                        <button id="tel" class="btn btn-outline-primary" onClick="location.href='tel:+551147656800'"> <i
+                                class="fa-brands fa-whatsapp"></i> 11 4765-6800 </button>
+                        <button id="whats" class="btn btn-whatsapp"
+                            onClick="location.href='https://wa.me/551147656800'"> <i
+                                class="fa-brands fa-whatsapp me-2"></i> 11 4765-6800 </button>
+                    </div>
+                </div>
+            </div>
+            <div id="confiraSeminovos"></div>
+            <script src="/vuejs/HomeConfiraSeminovos.js?v=1.2"></script>
+        </div>
+    </section>
+    <section id="acessorios" class="py-5">
+        <div class="container">
+            <div class="row equal-height-cards">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card w-100 equal-height-card">
+                        <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Consórcio nacional
+                            Honda
+                        </div>
+                        <img src="/img/access-consorcio.webp" class="w-100" alt="...">
+                        <div class="card-body">
+                            <p>Planos do Consórcio Nacional Honda não têm juros, entradas ou taxa de adesão.</p>
+                            <a href="/consorcio" class="btn btn-outline-primary"> <i class="fa-solid fa-plus me-2"></i>
+                                Mais
+                                informações </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card w-100 equal-height-card">
+                        <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Honda Access </div>
+                        <img src="/img/access-access.webp" class="w-100" alt="...">
+                        <div class="card-body">
+                            <p>Conheça o catálogo de acessórios e produtos especiais para deixar o seu Honda do seu
+                                jeito.
+                            </p>
+                            <a href="/pecas-e-acessorios" class="btn btn-outline-primary"> <i
+                                    class="fa-solid fa-plus me-2"></i> Mais informações </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card w-100 equal-height-card">
+                        <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Vendas especiais
+                        </div>
+                        <img src="/img/access-conduz.webp" class="w-100" alt="...">
+                        <div class="card-body">
+                            <p>A Honda valoriza a inclusão de pessoas com deficiência, promovendo mobilidade e respeito
+                                à
+                                diversidade em suas ações.</p>
+                            <a href="/hondaconduz" class="btn btn-outline-primary"> <i
+                                    class="fa-solid fa-plus me-2"></i>
+                                Mais informações </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var idRegiaoExistente = localStorage.getItem('idRegiao');
+            var telefone = document.getElementById("tel");
+            var whatsapp = document.getElementById("whats");
+
+            if (idRegiaoExistente == 1) {
+                telefone.innerHTML = '<i class="fa-solid fa-mobile-screen-button me-2"></i>(011) 4765-6800';
+                telefone.onclick = function () {
+                    location.href = "tel:+551147656800";
+                };
+                whatsapp.innerHTML = '<i class="fa-brands fa-whatsapp"></i> Por WhatsApp';
+                whatsapp.onclick = function () {
+                    location.href = "https://api.whatsapp.com/send?phone=551147656800";
+                };
+            } if (idRegiaoExistente == 2) {
+                telefone.innerHTML = '<i class="fa-solid fa-mobile-screen-button me-2"></i>(012) 2134-5355';
+                telefone.onclick = function () {
+                    location.href = "tel:+551221345355";
+                };
+                whatsapp.innerHTML = '<i class="fa-brands fa-whatsapp"></i> Por WhatsApp';
+                whatsapp.onclick = function () {
+                    location.href = "https://api.whatsapp.com/send?phone=5512997706936";
+                };
+            }
+            else {
+                telefone.innerHTML = '<i class="fa-solid fa-mobile-screen-button me-2"></i>(011) 4765-6800';
+                telefone.onclick = function () {
+                    location.href = "tel:+551147656800";
+                };
+                whatsapp.innerHTML = '<i class="fa-brands fa-whatsapp"></i> Por WhatsApp';
+                whatsapp.onclick = function () {
+                    location.href = "https://api.whatsapp.com/send?phone=551147656800";
+                };
+            }
+        });
+    </script>
