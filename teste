@@ -1,0 +1,170 @@
+<nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Modelos
+                    </a>
+                    <div class="dropdown-menu">
+                        <div id="modelo-filters" class="row">
+
+                        </div>
+                        <div id="dropModelos" class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/crv-advanced-hybrid">
+                                    <img src="img/modelos/crv/crv.webp" width="167" class="d-block m-auto"
+                                        alt="CR-V Advanced Hybrid">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">CR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/crv-advanced-hybrid">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/zrv-touring">
+                                    <img src="img/modelos/zrv.webp" width="167" class="d-block m-auto" alt="ZR-V">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">ZR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/zrv-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/accord-hibrido">
+                                    <img src="img/modelos/accord.webp" width="167" height="95" class="d-block m-auto"
+                                        alt="Accord">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Accord</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/accord-hibrido">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-hrv-touring">
+                                    <img src="img/modelos/newhrv.png" width="167" height="95" class="d-block m-auto" alt="New HR-V">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">New HR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-hrv-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-city-touring">
+                                    <img src="img/modelos/newcity.png" width="167" height="95" class="d-block m-auto"
+                                        alt="New City">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">New City</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-city-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-city-hb-touring">
+                                    <img src="img/modelos/newcityhb.png" width="167" height="95" class="d-block m-auto"
+                                        alt="New City Hatchback">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">New City Hatchback</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-city-hb-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/civic-advanced-hybrid">
+                                    <img src="img/modelos/civic_2023.png" class="d-block m-auto" alt="Civic Híbrido">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Civic Advanced Hybrid</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/civic-advanced-hybrid">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/civic-type-r">
+                                    <img src="img/modelos/type_r.png" class="d-block m-auto" alt="Civic Type-R">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Civic Type-R</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/civic-type-r">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/seminovos">Seminovos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Serviços
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/servicos">Oficina de Reparação</a></li>
+                        <li><a class="dropdown-item" href="/agenda-facil">Agende a sua revisão</a></li>
+                        <li><a class="dropdown-item" href="/revisao-programada">Revisão Programada</a></li>
+                        <li><a class="dropdown-item" href="/pecas-e-acessorios">Peças e Acessórios</a></li>
+                        <li><a class="dropdown-item" href="/catalogo-pecas">Catálogo de Peças</a></li>
+                        <li><a class="dropdown-item" href="/testdrive">Test Drive</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/consorcio">Consórcio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Vendas Especiais
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/hondaconduz">Honda Conduz</a></li>
+                        <li><a class="dropdown-item" href="/taxistas">Taxistas</a></li>
+                        <li><a class="dropdown-item" href="/diplomatas">Diplomatas</a></li>
+                        <li><a class="dropdown-item" href="/pessoajuridica">Pessoa Jurídica</a></li>
+                        <li><a class="dropdown-item" href="/produtorrural">Produtor Rural</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/escreva-para-nos">Escreva para Nós</a></li>
+                        <li><a class="dropdown-item" href="/linha-direta">Linha Direta</a></li>
+                        <li><a class="dropdown-item" href="/cadastro-de-email">Cadastro de E-mail</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Trabalhe Conosco</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
