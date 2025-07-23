@@ -457,7 +457,6 @@
 
     #item2 .content h1{
         font-size: var(--font-normal);
-        color: var(--color-gray-0);
         text-shadow: none;
     }
 
