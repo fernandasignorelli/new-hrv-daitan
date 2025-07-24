@@ -1,653 +1,170 @@
-<div id="footerFilialSP">          
-  <div class="footer-filial">            
-    <ul class="nav nav-pills flex-column nav-pill" id="pills-01-tab" role="tablist">
-      <li>
-        <div id="trocaRegiao">
-          <p class="color-gray-0 text-center mb-1"><small>Selecione a região:</small></p>
-          <div id="navTroca">
-            <button id="btnSPsp" class="btn btn-city activate">São Paulo</button>
-            <button id="btnVP" class="btn btn-city">Vale do Paraíba</button>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link fw-semibold active position-relative" id="pills-01-tab" data-bs-toggle="pill" data-bs-target="#pillsp-01" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-          <i class="fa-solid fa-location-dot color-red me-2"></i>
-          Ibirapuera
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link fw-semibold position-relative" id="pills-02-tab" data-bs-toggle="pill" data-bs-target="#pillsp-02" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-          <i class="fa-solid fa-location-dot color-red me-2"></i>
-          Jabaquara
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link fw-semibold position-relative" id="pills-03-tab" data-bs-toggle="pill" data-bs-target="#pillsp-03" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-          <i class="fa-solid fa-location-dot color-red me-2"></i>
-          Pompeia
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link fw-semibold position-relative" id="pills-04-tab" data-bs-toggle="pill" data-bs-target="#pillsp-04" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-          <i class="fa-solid fa-location-dot color-red me-2"></i>
-          Sumaré
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content p-3 w-100" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pillsp-01" role="tabpanel" aria-labelledby="pills-01-tab">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-              <div class="row mb-3">                                               
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-location-dot me-1"></i>
-                      <b>Endereço:</b><br>
-                      Av. Ibirapuera, 2771 - Indianópolis,<br>
-                      São Paulo - SP, 04029-200
-                    </p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <a href="https://waze.com/ul/h6gycdn75g" target="_blank" class="btn btn-waze">
-                      <img src="/img/ico-waze.svg" alt="Logo Waze">
-                      Waze
+<nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Modelos
                     </a>
-                    <a href="https://maps.app.goo.gl/G84QXGv7WXNq3gCZ6" target="_blank" class="btn btn-googlemaps">
-                      <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                      Google Maps
-                    </a>  
-                  </div>
-              </div>  
-              
-              <p class="mb-3">
-                <i class="fa-solid fa-phone me-1"></i>
-                <b>Telefone:</b> 11 5536-9966
-              </p>  
-              
-              <div class="row">
-                <div class="col-sm-12 col-md-9 col-sm-9">
-                  <p class="mb-3">
-                    <i class="fa-solid fa-clock me-1"></i>
-                    <b>Horário de Funcionamento:</b><br>
-                    <b>Vendas:</b> Seg. a Sex. das 8h às 19h | Sábado das 9h às 19h<br>
-                    <b>Recepção Técnica (Oficina):</b> Seg. a Sex. das 8h às 18h | Sábado das 9h às 13h<br>
-                    <b>Departamento de Peças:</b> Seg. a Sex. das 8h às 18h
-                  </p>
-                </div>
-                <div class="col-sm-12 col-md-3 col-sm-3">
-                  <div class="d-block css-eco">                        
-                    <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-            <img src="/img/unidades/sp-ibirapuera.webp" class="w-100 unidade-pic my-3" alt="">
-          </div>
-        </div> 
-      </div>
-      <div class="tab-pane fade" id="pillsp-02" role="tabpanel" aria-labelledby="pills-02-tab">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-              <div class="row mb-3">                                               
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-location-dot me-1"></i>
-                      <b>Endereço:</b><br>
-                      Av. Jabaquara, 2371 - Mirandópolis,<br>
-                      São Paulo - SP, 04029-200
-                    </p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <a href="https://waze.com/ul/h6gycdejmq" target="_blank" class="btn btn-waze">
-                      <img src="/img/ico-waze.svg" alt="Logo Waze">
-                      Waze
+                    <div class="dropdown-menu">
+                        <div id="modelo-filters" class="row">
+
+                        </div>
+                        <div id="dropModelos" class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/crv-advanced-hybrid">
+                                    <img src="img/modelos/crv/crv.webp" width="167" class="d-block m-auto"
+                                        alt="CR-V Advanced Hybrid">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">CR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/crv-advanced-hybrid">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/zrv-touring">
+                                    <img src="img/modelos/zrv.webp" width="167" class="d-block m-auto" alt="ZR-V">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">ZR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/zrv-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/accord-hibrido">
+                                    <img src="img/modelos/accord.webp" width="167" height="95" class="d-block m-auto"
+                                        alt="Accord">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Accord</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/accord-hibrido">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-hrv-touring">
+                                    <img src="img/modelos/newhrv.png" width="167" height="95" class="d-block m-auto" alt="HR-V">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">HR-V</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-hrv-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-city-touring">
+                                    <img src="img/modelos/newcity.png" width="167" height="95" class="d-block m-auto"
+                                        alt="New City">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">New City</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-city-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/new-city-hb-touring">
+                                    <img src="img/modelos/newcityhb.png" width="167" height="95" class="d-block m-auto"
+                                        alt="New City Hatchback">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">New City Hatchback</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-city-hb-touring">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/civic-advanced-hybrid">
+                                    <img src="img/modelos/civic_2023.png" class="d-block m-auto" alt="Civic Híbrido">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Civic Advanced Hybrid</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/civic-advanced-hybrid">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 py-3">
+                                <a class="dropdown-car" href="/civic-type-r">
+                                    <img src="img/modelos/type_r.png" class="d-block m-auto" alt="Civic Type-R">
+                                </a>
+                                <p class="text-center text-uppercase mb-1">Civic Type-R</p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/civic-type-r">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/seminovos">Seminovos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Serviços
                     </a>
-                    <a href="https://maps.app.goo.gl/HMKsZuafvqbewD2r6" target="_blank" class="btn btn-googlemaps">
-                      <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                      Google Maps
-                    </a>  
-                  </div>
-              </div>  
-              
-              <p class="mb-3">
-                <i class="fa-solid fa-phone me-1"></i>
-                <b>Telefone:</b> 11 5591-0140
-              </p>  
-              
-              <div class="row">
-                <div class="col-sm-12 col-md-9 col-sm-9">
-                  <p class="mb-3">
-                    <i class="fa-solid fa-clock me-1"></i>
-                    <b>Horário de Funcionamento:</b><br>
-                    <b>Vendas:</b> Seg. a Sex. das 8h às 19h | Sábado das 9h às 19h<br>
-                    <b>Recepção Técnica (Oficina):</b> Seg. a Sex. das 8h às 18h | Sábado das 9h às 13h<br>
-                    <b>Departamento de Peças:</b> Seg. a Sex. das 8h às 18h
-                  </p>
-                </div>
-                <div class="col-sm-12 col-md-3 col-sm-3">
-                  <div class="d-block css-eco">                        
-                    <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-            <img src="/img/unidades/sp-jabaquara.webp" class="w-100 unidade-pic my-3" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="pillsp-03" role="tabpanel" aria-labelledby="pills-03-tab">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-              <div class="row mb-3">                                               
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-location-dot me-1"></i>
-                      <b>Endereço:</b><br>
-                      R. Carlos Vicari, 154 - Barra Funda,<br>
-                      São Paulo - SP, 04029-200
-                    </p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <a href="https://waze.com/ul/h6gyf1tw0k" target="_blank" class="btn btn-waze">
-                      <img src="/img/ico-waze.svg" alt="Logo Waze">
-                      Waze
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/servicos">Oficina de Reparação</a></li>
+                        <li><a class="dropdown-item" href="/agenda-facil">Agende a sua revisão</a></li>
+                        <li><a class="dropdown-item" href="/revisao-programada">Revisão Programada</a></li>
+                        <li><a class="dropdown-item" href="/pecas-e-acessorios">Peças e Acessórios</a></li>
+                        <li><a class="dropdown-item" href="/catalogo-pecas">Catálogo de Peças</a></li>
+                        <li><a class="dropdown-item" href="/testdrive">Test Drive</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/consorcio">Consórcio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Vendas Especiais
                     </a>
-                    <a href="https://maps.app.goo.gl/o4i5pB4dgnjsi67s8" target="_blank" class="btn btn-googlemaps">
-                      <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                      Google Maps
-                    </a>  
-                  </div>
-              </div>  
-              
-              <p class="mb-3">
-                <i class="fa-solid fa-phone me-1"></i>
-                <b>Telefone:</b> 11 2102-0999
-              </p>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-9 col-sm-9">
-                  <p class="mb-3">
-                    <i class="fa-solid fa-clock me-1"></i>
-                    <b>Horário de Funcionamento:</b><br>
-                    <b>Vendas:</b> Seg. a Sex. das 8h às 19h | Sábado das 9h às 19h<br>
-                    <b>Recepção Técnica (Oficina):</b> Seg. a Sex. das 8h às 18h | Sábado das 9h às 13h<br>
-                    <b>Departamento de Peças:</b> Seg. a Sex. das 8h às 18h
-                  </p>
-                </div>
-                <div class="col-sm-12 col-md-3 col-sm-3">
-                  <div class="d-block css-eco">                        
-                    <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-                  </div>
-                </div>
-              </div>                      
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-            <img src="/img/unidades/sp-pompeia.webp" class="w-100 unidade-pic my-3" alt="">
-          </div>
-        </div>       
-      </div>
-      <div class="tab-pane fade" id="pillsp-04" role="tabpanel" aria-labelledby="pills-04-tab">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-              <div class="row mb-3">                                               
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-location-dot me-1"></i>
-                      <b>Endereço:</b><br>
-                      Av. Sumaré, 1744 - Perdizes,<br>
-                      São Paulo - SP, 04029-200
-                    </p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <a href="https://ul.waze.com/ul?ll=-23.54416971%2C-46.67675614&navigate=yes&zoom=17&utm_campaign=share_drive&utm_source=waze_app&utm_medium=lm_share_location" target="_blank" class="btn btn-waze">
-                      <img src="/img/ico-waze.svg" alt="Logo Waze">
-                      Waze
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/hondaconduz">Honda Conduz</a></li>
+                        <li><a class="dropdown-item" href="/taxistas">Taxistas</a></li>
+                        <li><a class="dropdown-item" href="/diplomatas">Diplomatas</a></li>
+                        <li><a class="dropdown-item" href="/pessoajuridica">Pessoa Jurídica</a></li>
+                        <li><a class="dropdown-item" href="/produtorrural">Produtor Rural</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contato
                     </a>
-                    <a href="https://maps.app.goo.gl/F9sNi1DYPCLeuLAX8" target="_blank" class="btn btn-googlemaps">
-                      <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                      Google Maps
-                    </a>  
-                  </div>
-              </div>  
-              
-              <p class="mb-3">
-                <i class="fa-solid fa-phone me-1"></i>
-                <b>Telefone:</b> 11 3675-0655
-              </p>  
-              
-              <div class="row">
-                <div class="col-sm-12 col-md-9 col-sm-9">
-                  <p class="mb-3">
-                    <i class="fa-solid fa-clock me-1"></i>
-                    <b>Horário de Funcionamento:</b><br>
-                    <b>Vendas:</b> Seg. a Sex. das 8h às 19h | Sábado das 9h às 19h<br>
-                    <b>Recepção Técnica (Oficina):</b> Atendimento na Daitan Pompeia<br>
-                    <b>Departamento de Peças:</b> Atendimento na Daitan Pompeia
-                  </p>
-                </div>
-                <div class="col-sm-12 col-md-3 col-sm-3">
-                  <div class="d-block css-eco">                        
-                    <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-            <img src="/img/unidades/sp-sumare.webp" class="w-100 unidade-pic my-3" alt="">
-          </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/escreva-para-nos">Escreva para Nós</a></li>
+                        <li><a class="dropdown-item" href="/linha-direta">Linha Direta</a></li>
+                        <li><a class="dropdown-item" href="/cadastro-de-email">Cadastro de E-mail</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Trabalhe Conosco</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </div>
     </div>
-
-  </div>          
-</div>
-
-<div id="footerFilialVP">        
-<div class="footer-filial">
-  <ul class="nav nav-pills flex-column nav-pill" id="pills-01-tab" role="tablist">
-    <li>
-      <div id="trocaRegiao">
-        <p class="color-gray-0 text-center mb-1"><small>Selecione a região:</small></p>
-        <div id="navTroca">
-          <button id="btnSP" class="btn btn-city">São Paulo</button>
-          <button id="btnVPvp" class="btn btn-city activate">Vale do Paraíba</button>
-        </div>
-      </div>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link fw-semibold active position-relative" id="pills-05-tab" data-bs-toggle="pill" data-bs-target="#pillvp-01" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-        <i class="fa-solid fa-location-dot color-red me-2"></i>
-        Caraguatatuba
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link fw-semibold position-relative" id="pills-06-tab" data-bs-toggle="pill" data-bs-target="#pillvp-02" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-        <i class="fa-solid fa-location-dot color-red me-2"></i>
-        Guaratinguetá
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link fw-semibold position-relative" id="pills-07-tab" data-bs-toggle="pill" data-bs-target="#pillvp-03" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-        <i class="fa-solid fa-location-dot color-red me-2"></i>
-        São José dos Campos
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link fw-semibold position-relative" id="pills-09-tab" data-bs-toggle="pill" data-bs-target="#pillvp-05" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-        <i class="fa-solid fa-location-dot color-red me-2"></i>
-        Seminovos Taubaté
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link fw-semibold position-relative" id="pills-08-tab" data-bs-toggle="pill" data-bs-target="#pillvp-04" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-        <i class="fa-solid fa-location-dot color-red me-2"></i>
-        Taubaté
-      </button>
-    </li>
-  </ul>
-  <div class="tab-content p-3 w-100" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pillvp-01" role="tabpanel" aria-labelledby="pills-05-tab">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-            <div class="row mb-3">                                               
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                  <p>
-                    <i class="fa-solid fa-location-dot me-1"></i>
-                    <b>Endereço:</b><br>
-                    Rua José Poloni, 35 - Rio do Ouro,<br>
-                    Caraguatatuba - SP, 11675-553
-                  </p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                  <a href="https://waze.com/ul/h6gz9wjqy4" target="_blank" class="btn btn-waze">
-                    <img src="/img/ico-waze.svg" alt="Logo Waze">
-                    Waze
-                  </a>
-                  <a href="https://maps.app.goo.gl/9NenXE3Tg832bn5P6" target="_blank" class="btn btn-googlemaps">
-                    <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                    Google Maps
-                  </a>  
-                </div>
-            </div>  
-
-            <p class="mb-3">
-              <i class="fa-solid fa-phone me-1"></i>
-              <b>Telefone:</b> 12 2134-5350
-            </p>
-
-            <p class="mb-3">
-              <i class="fa-solid fa-clock me-1"></i>
-              <b>Horário de Funcionamento:</b><br>
-              <b>Vendas:</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Recepção Técnica (Oficina):</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Departamento de Peças:</b> Segunda a Sábado das 8h às 18h
-            </p>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-          <img src="/img/unidades/vp-caraguatatuba.webp" class="w-100 unidade-pic my-3" alt="">
-        </div>
-      </div> 
-    </div>
-    <div class="tab-pane fade" id="pillvp-02" role="tabpanel" aria-labelledby="pills-06-tab">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-            <div class="row mb-3">                                               
-              <div class="col-sm-12 col-md-6 col-lg-6">
-                <p>
-                  <i class="fa-solid fa-location-dot me-1"></i>
-                  <b>Endereço:</b><br>
-                  R. Prof. Silvio José Marcondes Coelho, 1346 - Campo do Galvão, Guaratinguetá - SP, <br>
-                  12505-506
-                </p>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-6">
-                <a href="https://waze.com/ul/h6gzy5qjz1" target="_blank" class="btn btn-waze">
-                  <img src="/img/ico-waze.svg" alt="Logo Waze">
-                  Waze
-                </a>
-                <a href="https://maps.app.goo.gl/sb5Kkq9DSjtoYpCq5" target="_blank" class="btn btn-googlemaps">
-                  <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                  Google Maps
-                </a>  
-              </div>
-            </div>  
-            
-            <p class="mb-3">
-              <i class="fa-solid fa-phone me-1"></i>
-              <b>Telefone:</b> 12 3683-0600
-            </p>
-
-            <p class="mb-3">
-              <i class="fa-solid fa-clock me-1"></i>
-              <b>Horário de Funcionamento:</b><br>
-              <b>Vendas:</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Recepção Técnica (Oficina):</b> Segunda a Sexta das 8h às 18h | Sábado das 8h às 13h<br>
-              <b>Departamento de Peças:</b> Segunda a Sexta das 8h às 18h | Sábado das 8h às 13h
-            </p>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-          <img src="/img/unidades/vp-guaratingueta.webp" class="w-100 unidade-pic my-3" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="pillvp-03" role="tabpanel" aria-labelledby="pills-07-tab">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-          <div class="row mb-3">                                               
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <p>
-                <i class="fa-solid fa-location-dot me-1"></i>
-                <b>Endereço:</b><br>
-                Av. Cidade Jardim, 51 - Jardim Satélite,<br>
-                São José dos Campos - SP, 12231-675
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <a href="https://waze.com/ul/h6gz7gwn3e" target="_blank" class="btn btn-waze">
-                <img src="/img/ico-waze.svg" alt="Logo Waze">
-                Waze
-              </a>
-              <a href="https://maps.app.goo.gl/TnD6evYx8RCGqT7B6" target="_blank" class="btn btn-googlemaps">
-                <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                Google Maps
-              </a>  
-            </div>
-        </div>  
-        
-        <p class="mb-3">
-          <i class="fa-solid fa-phone me-1"></i>
-          <b>Telefone:</b> 12 3934-4644
-        </p>
-
-        
-          <div class="row">
-            <div class="col-sm-12 col-md-9 col-sm-9">
-              <p class="mb-3">
-                <i class="fa-solid fa-clock me-1"></i>
-                <b>Horário de Funcionamento:</b><br>
-                <b>Vendas:</b> Segunda a Sábado das 8h às 18h<br>
-                <b>Recepção Técnica (Oficina):</b> Segunda a Sábado das 8h às 18h<br>
-                <b>Departamento de Peças:</b> Segunda a Sábado das 8h às 18h
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-3 col-sm-3">
-              <div class="d-block css-eco">                        
-                <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-          <img src="/img/unidades/vp-sjc.webp" class="w-100 unidade-pic my-3" alt="">
-        </div>
-      </div>       
-    </div>
-    <div class="tab-pane fade" id="pillvp-05" role="tabpanel" aria-labelledby="pills-09-tab">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-          <div class="row mb-3">                                               
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <p>
-                <i class="fa-solid fa-location-dot me-1"></i>
-                <b>Endereço:</b><br>
-                Av. Charles Schnneider, 1750 - Parque Sr. do Bonfim, Taubaté - SP, 12040-000
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <a href="https://waze.com/ul/h6gzt48tck" target="_blank" class="btn btn-waze">
-                <img src="/img/ico-waze.svg" alt="Logo Waze">
-                Waze
-              </a>
-              <a href="https://maps.app.goo.gl/VgdYg3SxCHr6Ph5Z9" target="_blank" class="btn btn-googlemaps">
-                <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                Google Maps
-              </a>                        
-            </div>
-          </div>  
-        
-        <p class="mb-3">
-          <i class="fa-solid fa-phone me-1"></i>
-          <b>Telefone:</b> 12 3629-3003
-        </p>
-
-        <div class="row">
-          <div class="col-sm-12 col-md-9 col-sm-9">
-            <p class="mb-3">
-              <i class="fa-solid fa-clock me-1"></i>
-              <b>Horário de Funcionamento:</b><br>
-              <b>Vendas:</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Recepção Técnica (Oficina):</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Departamento de Peças:</b> Segunda a Sábado das 8h às 18h
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-3 col-sm-3">
-            <div class="d-block css-eco">                        
-              <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-            </div>
-          </div>
-
-        </div>                
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-          <img src="/img/unidades/vp-sntaubate.webp" class="w-100 unidade-pic my-3" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="pillvp-04" role="tabpanel" aria-labelledby="pills-08-tab">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1 order-lg-1">
-          <div class="row mb-3">                                               
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <p>
-                <i class="fa-solid fa-location-dot me-1"></i>
-                <b>Endereço:</b><br>
-                Av. Charles Schnneider, 1951 - Parque Sr. do Bonfim, Taubaté - SP, 12040-000
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <a href="https://waze.com/ul/h6gzt48tck" target="_blank" class="btn btn-waze">
-                <img src="/img/ico-waze.svg" alt="Logo Waze">
-                Waze
-              </a>
-              <a href="https://maps.app.goo.gl/VgdYg3SxCHr6Ph5Z9" target="_blank" class="btn btn-googlemaps">
-                <img src="/img/ico-googlemaps.svg" alt="Logo Google Maps">
-                Google Maps
-              </a>  
-            </div>
-        </div>  
-        
-        <p class="mb-3">
-          <i class="fa-solid fa-phone me-1"></i>
-          <b>Telefone:</b> 12 3629-3003
-        </p>
-
-        <div class="row">
-          <div class="col-sm-12 col-md-9 col-sm-9">
-            <p class="mb-3">
-              <i class="fa-solid fa-clock me-1"></i>
-              <b>Horário de Funcionamento:</b><br>
-              <b>Vendas:</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Recepção Técnica (Oficina):</b> Segunda a Sábado das 8h às 18h<br>
-              <b>Departamento de Peças:</b> Segunda a Sábado das 8h às 18h
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-3 col-sm-3">
-            <div class="d-block css-eco">                        
-              <img src="/img/unidades/concessionaria_ecologica.png" width="150" class="py-4" alt="">
-            </div>
-          </div>
-        </div> 
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-          <img src="/img/unidades/vp-taubate.webp" class="w-100 unidade-pic my-3" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>          
-</div>
-
-
-<div id="footerLinks" class="py-5">
-<div id="rowLink" class="pb-5">
-<div class="row">
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">MODELOS</p>
-<ul class="list-link">
-  <li><a href="/crv-advanced-hybrid">CR-V Advanced Hybrid</a></li>
-  <li><a href="/zrv-touring">ZR-V</a></li>
-  <li><a href="/accord-hibrido">Accord</a></li>
-  <li><a href="/new-hrv-touring">HR-V</a></li>
-  <li><a href="/new-city-touring">New City Sedan</a></li>
-  <li><a href="/new-city-hb-touring">New City Hatchback</a></li>
-  <li><a href="/civic-advanced-hybrid">Civic Advanced Hybrid</a></li>
-  <li><a href="/civic-type-r">Civic Type R </a></li>
-  <li><a href="/seminovos">Seminovos</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">SERVIÇOS</p>
-<ul class="list-link">
-  <li><a href="/servicos">Oficina de Reparação</a></li>
-  <li><a href="/agenda-facil">Agende a sua revisão</a></li>
-  <li><a href="/revisao-programada">Revisão Programada</a></li>
-  <li><a href="/pecas-e-acessorios">Peças e Acessórios</a></li>
-  <li><a href="/catalogo-pecas">Catálogo de Peças</a></li>
-  <li><a href="/testdrive">Test Drive</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">CONSÓRCIO</p>
-<ul class="list-link">
-  <li><a href="/consorcio">Consórcio HR-V</a></li>
-  <li><a href="/consorcio">Consórcio New City</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">VENDAS ESPECIAIS</p>
-<ul class="list-link">
-  <li><a href="/hondaconduz">Honda Conduz</a></li>
-  <li><a href="/taxistas">Taxistas</a></li>
-  <li><a href="/diplomatas">Diplomatas</a></li>
-  <li><a href="/pessoajuridica">Pessoa Jurídica</a></li>
-  <li><a href="/produtorrural">Produtor Rural</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">A DAITAN</p>
-<ul class="list-link">
-  <li><a href="/a-daitan">Sobre a Empresa</a></li>
-  <li><a href="/blog">Blog da Daitan</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p class="link-tile">FALE CONOSCO</p>
-<ul class="list-link">
-  <li><a href="/escreva-para-nos">Escreva para Nós</a></li>
-  <li><a href="/linha-direta">Linha Direta</a></li>
-  <li><a href="/cadastro-de-email">Cadastro de E-mail</a></li>
-  <!-- <li><a href="/trabalhe-conosco">Trabalhe Conosco</a></li> -->
-  <li><a class="linkRedirecionamento" data-bs-toggle="modal" data-bs-target="#exampleModal" >Trabalhe Conosco</a></li>
-  <!-- <li><a href="/ListaVagas" >Vagas Disponíveis</a></li> -->
-  <li><a class="linkRedirecionamento" data-bs-toggle="modal" data-bs-target="#exampleModal" >Vagas Disponíveis</a></li>
-
-</ul>
-<style>
-  .linkRedirecionamento{
-    cursor: pointer;
-  }
-</style>
-
-</div>
-</div>
-</div>
-<div class="row">
-<div id="footerCopyright"> <img src="/img/footer-ibama.webp" id="footerIbama" alt="Minha escolha faz a diferença no trânsito.">
-
-
-<div id="footerLogo"> <img src="/img/logo-daitan.svg" alt="">
-<p><small> © Daitan Comércio de Veículos Ltda <br>
-  CNPJ 67.375.899/0001-06. <a href="/politicas-privacidade">Políticas de Privacidade</a> </small></p>
-</div>
-</div>
-</div>
-</div>
-
-
-<div id="modalCookie" class="">
-  <div class="modal-content">
-    <div class="modal-header mb-4">
-      <h5 class="modal-title">Daitan e os cookies</h5>
-    </div>
-    <div class="modal-body mb-4">
-      <div class="d-flex justify-content-start align-items-center">
-        <i class="fa-solid fa-cookie-bite fa-3x me-4"></i>
-        <p class="mb-0">                
-          Utilizamos cookies para personalizar anúncios e melhorar a sua experiência na navegação do nosso site. Ao continuar navegando, você concorda com a nossa
-          <a href="/politicas-privacidade">Políticas de Privacidade</a>.
-        </p>
-      </div>              
-    </div>
-    <div class="modal-footer">
-      <div class="d-flex justify-content-end align-items-center">
-        <button type="button" id="closeCookie" class="btn btn-primary"  onClick="fn_fechar_modal();">Continuar e Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<script>
-
-function fn_fechar_modal()
-{
-      document.getElementById("modalCookie").className = "modal-dialog p-3 d-none";
-      var dataAtual = new Date().toLocaleDateString();
-      localStorage.setItem('ultimaDataModal', dataAtual);
-}
-</script>
-
+</nav>
