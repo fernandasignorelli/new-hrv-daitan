@@ -1,114 +1,73 @@
-<script src="https://www.google.com/recaptcha/api.js"></script>   
-<main>
-      <section id="capaConsorcio" class="capa">
+<section id="consorcioDuvidas" class="py-5">
         <div class="container">
-          <div class="row py-5">
-              <h1 class="h1estilo mb-5 text-shadow color-white">
-                  <span>Consórcio Nacional <b>Honda</b></span>
-              </h1>
-          </div>                  
-      </div>
-      </section>
+          <h2 class="h2estilo mb-5"><span>Dúvidas Frequentes</span></h2>
 
-      
-
-<section id="consorcio" class="py-5">
-        <div class="container">
-          <nav style="--bs-breadcrumb-divider: '>';" class="mt-2 mb-5" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Consórcio Nacional Honda</li>
-            </ol>
-          </nav>
- 
-          <div class="row d-flex align-items-center">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <p>O Consórcio é similar a um autofinanciamento, em que pessoas com o objetivo de adquirir um bem similar se juntam em um grupo e realizam pagamentos mensais para geração de fundo para compra do bem.</p>
- 
-              <p>A determinação de qual participante terá o <b>direito à aquisição do bem em cada mês é definida em assembleia</b>, por meio de lances oferecidos pelos participantes que desejam antecipar a aquisição do bem ou por sorteio através da loteria federal.</p>
- 
-              <p><b>Os planos do Consórcio Nacional Honda não têm juros, entradas ou taxa de adesão.</b></p>
- 
-              <p>Quer saber um pouco mais? Entre em contato conosco.</p>
+          <div class="accordion mb-5" id="duvidaFreq01">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  Por que escolher o Consórcio Nacional Honda (CNH)?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#duvidaFreq01">
+                <div class="accordion-body">
+                  <p>O Consórcio Nacional Honda atua em todo território nacional e está presente no mercado desde 1981, sendo a maior Administradora de Consórcios do Brasil. A entrega do bem é garantida pela fábrica. Ao adquirir uma cota do Consórcio Nacional Honda não lhe será cobrada taxa de adesão e nem juros, desde que os pagamentos sejam realizados em dia, valendo ressaltar que o CNH possui uma das taxas de administração mais competitivas do mercado. O CNH oferece planos diversificados, com prazos que variam de 12 a 72 meses para a linha de motocicletas Honda e 60 meses para automóveis Honda.</p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="px-3 py-4 rounded-2 bg-gray-3 shadow-sm">
-                <h3 class="color-red mb-4"><b>Fale Conosco</b></h3>
- 
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-floating mb-2">
-                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected>Selecione</option>
-                        <option value="1">Ibirapuera</option>
-                        <option value="2">Jabaquara</option>
-                        <option value="3">Pompéia</option>
-                        <option value="4">Sumaré</option>
-                      </select>
-                      <label for="floatingSelect">Selecione a unidade</label>
-                    </div>
-                    <div class="form-floating mb-2">
-                      <input type="text" class="form-control" id="floatingNome" placeholder="Nome" required>
-                      <label for="floatingNome">Nome Completo</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="form-floating mb-2">
-                      <input type="text" class="form-control" id="floatingCpf" placeholder="CPF" required>
-                      <label for="floatingCpf">CPF</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="form-floating mb-2">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
-                      <label for="floatingEmail">E-mail</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-floating mb-2">
-                      <input type="tel" class="form-control" id="floatingTel" placeholder="Telefone" required>
-                      <label for="floatingTel">Telefone</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="mb-2">
-                      <p class="mb-1"><b>Quero receber contato por:</b></p>
-                      <div class="d-flex">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="chkEmail">
-                          <label class="form-check-label" for="chkEmail">
-                            E-mail
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input mx-2" type="checkbox" value="" id="chkTel">
-                          <label class="form-check-label" for="chkTel">
-                            Telefone
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input mx-2" type="checkbox" value="" id="chkWhatsapp" checked>
-                          <label class="form-check-label" for="chkWhatsapp">
-                            Whatsapp
-                          </label>
-                        </div>
-                      </div>                      
-                    </div>
-                  </div>
-                 
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Quem pode adquirir cotas de Consórcio?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#duvidaFreq01">
+                <div class="accordion-body">
+                  <p>Podem adquirir cotas de Consórcio todas as pessoas maiores de 18 anos. Os maiores de 16 e menores de 18 anos também podem adquirir cotas de Consórcio, devendo assinar, necessariamente em conjunto com seus pais ou responsável legal, a Proposta de Adesão a Grupo de Consórcio.</p>
                 </div>
- 
-                <div class="d-flex justify-content-end">
-                  <img src="img/reCAPTCHA.jpg" width="280" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Como posso adquirir cotas do Consórcio Nacional Honda?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#duvidaFreq01">
+                <div class="accordion-body">
+                  <p>Você pode entrar em contato com a Concessionária Honda mais próxima e falar com um representante autorizado do Consórcio Nacional Honda, que lhe informará sobre todas as vantagens e benefícios de aderir a Grupo de Consórcio do CNH para aquisição de produtos Honda. Você também pode adquirir cotas do CNH através do site <a href="https://www.consorcionacionalhonda.com.br/" target="_blank">www.consorcionacionalhonda.com.br</a>. Após adquirir sua cota, não esqueça de levar com você o recibo devidamente preenchido e com o carimbo da sua Concessionária Honda.</p>
                 </div>
- 
-                <div id="escrevaNav" class="my-3">
-                  <button type="reset" class="btn btn-outline-primary btn-lg">Limpar</button>
-                  <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#consorcioForm">Enviar</button>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Quantas cotas de motocicletas posso adquirir?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#duvidaFreq01">
+                <div class="accordion-body">
+                  <p>Cada Consorciado pessoa física pode adquirir até 5 cotas. Se o Consorciado for pessoa jurídica poderá adquirir até 10 cotas. Cada Consorciado somente poderá possuir até 2 cotas de Consórcio no mesmo Grupo. Para os modelos Shadow 750 e Hornet 600 o limite é de 1 cota por Consorciado por Grupo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Quantas cotas de automóveis posso adquirir?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#duvidaFreq01">
+                <div class="accordion-body">
+                  <p>Cada Consorciado pessoa física pode adquirir até 3 cotas. Se o Consorciado for pessoa jurídica poderá adquirir até 5 cotas. Cada Consorciado somente poderá possuir até 2 cotas de Consórcio no mesmo Grupo.</p>
                 </div>
               </div>
             </div>
           </div>
-         
+
+          <p class="text-center"> 
+            <a href="/consorcio-duvidas" class="btn btn-primary btn-lg">Veja mais perguntas e respostas</a>
+          </p>
         </div>
       </section>
+    </main>
