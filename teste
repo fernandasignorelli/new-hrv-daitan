@@ -51,12 +51,13 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-3 py-3">
-                                <a class="dropdown-car" href="/new-hrv-touring">
-                                    <img src="img/modelos/newhrv.png" width="167" height="95" class="d-block m-auto" alt="HR-V">
+                                <a class="dropdown-car" href="/hrv-touring">
+                                    <img src="img/modelos/newhrv.png?v=1" width="167" height="95" class="d-block m-auto"
+                                        alt="HR-V">
                                 </a>
                                 <p class="text-center text-uppercase mb-1">HR-V</p>
                                 <div class="text-center">
-                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/new-hrv-touring">
+                                    <a class="btn btn-primary btn-sm m-auto w-btn" href="/hrv-touring">
                                         <i class="fa-solid fa-plus"></i>
                                         Saiba Mais
                                     </a>
@@ -91,7 +92,8 @@
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-3 py-3">
                                 <a class="dropdown-car" href="/civic-advanced-hybrid">
-                                    <img src="img/modelos/civic_2023.png" class="d-block m-auto" alt="Civic Híbrido">
+                                    <img src="img/modelos/civic-2025.png" width="167" height="95" class="d-block m-auto"
+                                        alt="Civic Híbrido">
                                 </a>
                                 <p class="text-center text-uppercase mb-1">Civic Advanced Hybrid</p>
                                 <div class="text-center">
