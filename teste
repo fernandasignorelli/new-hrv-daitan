@@ -1,207 +1,1255 @@
-<section id="modelos" class="py-5">
-    <div class="container">
-        <h1 class="h1estilo mb-4">Descubra o Honda <b>perfeito para você</b></h1>
-        <!--<div id="modelosFiltro" class="mb-5">
-              <div class="row">
-                <ul class="filter-content">
-                  <li class="filter-item">
-                    <a href="#" class="active">Todos</a>                
-                  </li>
-                  <li class="filter-item">
-                    <a href="#">Passeios</a>                
-                  </li>
-                  <li class="filter-item">
-                    <a href="#">SUV</a>                
-                  </li>
-                </ul>
-              </div>            
-            </div>-->
-        <div id="modelosContent">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<main>
+    <section id="modeloBanner">
+        <div id="capaModelo">
+            <div id="item1" class="banner-item">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-01.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-01-mob.webp" class="w-100 mobile"
+                    alt="">
+            </div>
+
+            <div id="item2" class="banner-item d-none">
+                <div class="content">
+                    <h1>Magic Seat</h1>
+                    <p class="desktop">Confortável, o New City Hatchback conta com sistema Magic Seat de rebatimento
+                        dos bancos, que permite expandir o espaço interno do veículo de forma prática e versátil.
+                    </p>
+                </div>
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-02.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-02-mob.webp" class="w-100 mobile"
+                    alt="">
+            </div>
+
+            <div id="item3" class="banner-item d-none">
+                <div class="content">
+                    <h1>Botão de partida<br>
+                        do motor (Start/Stop)</h1>
+                    <p class="desktop">Surpreenda-se com toda tecnologia e praticidade do New City Hatchback. Com botão
+                        de partida Start/Stop, você pode acionar o motor com um simples toque, sem precisar da chave.
+                    </p>
+                </div>
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-03.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-03-mob.webp" class="w-100 mobile"
+                    alt="">
+            </div>
+
+            <div id="item4" class="banner-item d-none">
+                <div class="content">
+                    <h1>Carregador sem fio<br>
+                        para smartphones</h1>
+                    <p class="desktop">O carregador sem fio garante que seu smartphone nunca fique sem energia. Basta
+                        colocar o telefone na base de carregamento por indução para um carregamento sem o incômodo dos
+                        fios.</p>
+                </div>
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-04.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-04-mob.webp" class="w-100 mobile"
+                    alt="">
+            </div>
+
+            <div id="item5" class="banner-item d-none">
+                <div class="content">
+                    <h1>Bluetooth com HFT e<br>
+                        função Voice Tag</h1>
+                    <p class="desktop">O New City Hatchback tem conexão bluetooth para reproduzir suas músicas direto do
+                        smartphone e sistema HFT (Hands Free Telephone) com função Voice Tag para realização de chamadas
+                        telefônicas por comandos de voz.</p>
+                </div>
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-05.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_cityHB2025/banner/banner-cityHB2025-05-mob.webp" class="w-100 mobile"
+                    alt="">
+            </div>
+
+            <div id="item6" class="banner-item d-none">
+                <div class="content">
+                    <h1>Multimídia 8" touchscreen</h1>
+                    <p class="desktop">Com interface sem fio para Apple Carplay®* e Android Auto™*, Voice Tag e câmera
+                        de ré, o multimídia touchscreen 8” do New City Hatchback alia a tecnologia e a conectividade a
+                        um mundo de entretenimento.</p>
+                </div>
+                <img src="img/modelos/galeria_city/modelBanner-6.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_city/modelBannerMob-6.webp" class="w-100 mobile" alt="">
+            </div>
+
+            <div id="item7" class="banner-item d-none">
+                <div class="content">
+                    <h1>Painel digital TFT 7"</h1>
+                    <p class="desktop">O Novo Painel Digital TFT de 7" de alta definição do New City conta com diversas
+                        funções e garante maior autonomia e agilidade na leitura das informações, elevando ainda mais a
+                        sua experiência a bordo.</p>
+                </div>
+                <img src="img/modelos/galeria_city/modelBanner-7.webp" class="w-100 desktop" alt="">
+                <img src="img/modelos/galeria_city/modelBannerMob-7.webp" class="w-100 mobile" alt="">
+            </div>
+
+        </div>
+
+        <div id="topNav" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <button id="btnCotacao" class="btn btn-primary w-100 d-block mb-2">Peça uma cotação</button>
+                        <button id="btnTestdrive" class="btn btn-outline-light w-100 d-block">Test Drive</button>
+                    </div>
+                    <div class="col-sm-6 col-md-9 col-lg-9">
+                        <div class="row-nav desktop cityHB-nav d-flex justify-content-between">
+                            <button id="btn1" class="btn btn-modelo active">
+                                Honda New City<br>
+                                Hatchback
+                            </button>
+                            </button>
+                            <button id="btn2" class="btn btn-modelo">
+                                Magic<br>
+                                Seat
+                            </button>
+                            <button id="btn3" class="btn btn-modelo">
+                                Botão de<br>
+                                Partida
+                            </button>
+                            <button id="btn4" class="btn btn-modelo">
+                                Carregamento <br>
+                                Sem fio
+                            </button>
+                            <button id="btn5" class="btn btn-modelo">
+                                Bluetooth<br>
+                                com HFT
+                            </button>
+                            <button id="btn6" class="btn btn-modelo">
+                                Multimídia 8"<br>
+                                touchscreen
+                            </button>
+                            <button id="btn7" class="btn btn-modelo">
+                                Painel<br>
+                                Digital TFT
+                            </button>
+                        </div>
+                        <div class="mobile-nav mobile">
+                            <div class="d-flex">
+                                <button id="btnPrev" class="btn btn-light me-1 w-100">
+                                    <i class="fa-solid fa-angles-left text-center"></i>
+                                </button>
+
+                                <button id="btnNext" class="btn btn-light ms-1 w-100">
+                                    <i class="fa-solid fa-angles-right text-center"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="modeloVersoes" class="py-5">
+
+        <h1 class="h1estilo mb-5">Conheça todas as <b>Versões</b></h1>
+
+
+        <div id="modelVersoes" class="py-2 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-4 col-md-2 col-lg-2 d-flex">
+                    <a id="touring sport" href="/new-city-hb-touring-sport" class="btn btn-versao text-center mx-1">
+                        <img src="img/modelos/galeria_cityHB2025/modelos/btn-cityHB-touring-sport.webp" class="m-auto d-block" alt="">
+                        Touring Sport
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 col-lg-2 d-flex">
+                    <a id="touring" href="/new-city-hb-touring" class="btn btn-versao text-center mx-1 active">
+                        <img src="img/modelos/galeria_cityHB2025/modelos/btn-cityHB-touring.webp" class="m-auto d-block" alt="">
+                        Touring
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 col-lg-2 d-flex">
+                    <a id="exl" href="/new-city-hb-exl" class="btn btn-versao text-center mx-1">
+                        <img src="img/modelos/galeria_cityHB2025/modelos/btn-cityHB-exl.webp" class="m-auto d-block" alt="">
+                        EXL
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 col-lg-2 d-flex">
+                    <a id="ex" href="/new-city-hb-ex" class="btn btn-versao text-center mx-1">
+                        <img src="img/modelos/galeria_cityHB2025/modelos/btn-cityHB-ex.webp" class="m-auto d-block" alt="">
+                        EX
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 col-lg-2 d-flex">
+                    <a id="lx" href="/new-city-hb-lx" class="btn btn-versao text-center mx-1">
+                        <img src="img/modelos/galeria_cityHB2025/modelos/btn-cityHB-lx.webp" class="m-auto d-block" alt="">
+                        LX
+                    </a>
+                </div>
+            </div>
+        </div>            
+
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+
+                    <div id="carouselModelos" class="carousel slide" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="0" id="btnColor1"
+                                class="active btn-color" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="1" id="btnColor2"
+                                class="btn-color" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="2" id="btnColor3"
+                                class="btn-color" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="3" id="btnColor4"
+                                class="btn-color" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="4" id="btnColor5"
+                                class="btn-color" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="5" id="btnColor6"
+                                class="btn-color" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="6" id="btnColor7"
+                                class="btn-color" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselModelos" data-bs-slide-to="7" id="btnColor8"
+                                class="btn-color" aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Branco_Tafeta_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Branco Tafetá Sólido</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Branco_Topazio_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Branco Topázio Perolizado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Prata_Platinum_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Prata Platinum Metálico</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Cinza_Grafeno_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Cinza Grafeno Perolizado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Azul_Cosmico_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Azul Cósmico Metálico</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Cinza_Basalto_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Cinza Basalto Metálico</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Preto_Cristal_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Preto Cristal Perolizado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/modelos/galeria_cityHB2025/cores/touring/Relogio_Touring_3-4_Frontal_Lado_A_Vermelho_Supernova_City_HB_2024.webp"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <p>Vermelho Mercúrio Perolizado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="versao-box p-4 my-4">
+                        <h3 class="h2estilo"><span>New City Hatchback Touring</span></h3>
+
+                        <ul class="versao-list">
+                            <li>Honda SENSING</li>
+                            <li>myHonda Connect</li>
+                            <li>Sensores de estacionamentos traseiros e dianteiros</li>
+                            <li>LaneWatch - Assistente para redução de ponto cego</li>
+                            <li>Banco de couro</li>
+                        </ul>
+
+                        <div class="footer-nav">
+                            <a href="#modeloFichatecnica" class="btn btn-outline-primary mx-1">Ficha Técnica</a>
+                            <a href="/escreva-para-nos" class="btn btn-primary mx-1">Tenho Interesse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="modeloCotacao" class="py-5">
+        <div class="container">
+            <h1 class="h1estilo mb-5">Peça uma <b>cotação</b></h1>
             <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0 color-gray text-center">A partir de</p>
+                    <h1 class="mb-0 color-gray text-center">R$ 145.700,00*</h1>
+                    <p class="color-gray text-center"><b>Transmissão Automática CVT</b></p>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/new-city-hb-touring" class="text-center"> <img
-                                src="img/modelos/newcityhb.png?v=2" width="167" height="95"
-                                class="modelo-hover d-block m-auto" alt="New City HatchBack">
-                            <div class="modelo-logo"> <img src="img/logos/new_city_hatchback.svg" class="d-block m-auto"
-                                    alt="Logo New City"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 117.500,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/new-city-hb-touring"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                    <p class="text-center"><small style="font-size: 10px; line-height: .4;">* Preço público sugerido em
+                            reais, com frete incluso, podendo variar de acordo com a tributação e alíquotas específicas
+                            de cada Estado (consulte a concessionária para mais informações). Acréscimo de R$1.900,00
+                            para pintura metálica ou perolizada e de R$2.200,00 para cores especiais (branco topázio
+                            perolizado). O sistema de exibição na tela não reproduz a cor real do veículo, servindo
+                            apenas como referência.</small></p>
+
+                    <div class="video-container mb-3">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/xwN3Cx3uYHs?si=Xl6dJwjcgq5tX0fX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
                 </div>
+                <div id="pecaUmaCotacao"></div>
+                <script src="/vuejs/pecaUmaCotacao.js?v=1"></script>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/new-city-touring" class="text-center"> <img
-                                src="img/modelos/newcity.png?v=2" width="167" height="95"
-                                class="modelo-hover d-block m-auto" alt="Modelo New City">
-                            <div class="modelo-logo"> <img src="img/logos/new_city.svg" class="d-block m-auto"
-                                    alt="Logo New City"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 117.500,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/new-city-touring"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+    <section id="modeloGaleria" class="py-5">
+        <div class="container">
+            <h1 class="h1estilo mb-5">Todos os ângulos do seu <b>New City Hatchback</b></h1>
+
+            <div class="mt-5">
+                <div id="thumbnailCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Thumbnails 1-6 -->
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-01.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Painel Geral</b>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-02.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Multimídia</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-03.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Câmera de ré</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-04.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Ar Condicionado</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-05.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Cluster</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-06.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Start/Stop</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais 4 thumbnails aqui -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Thumbnails 1-6 -->
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-07.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - HTF</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-08.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Paddle shift</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-09.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Banco</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-10.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Airbags</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-11.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Console central</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-12.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Carregador sem fio</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais 4 thumbnails aqui -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Thumbnails 1-6 -->
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-13.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Porta malas cheio</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-14.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Porta malas vazio</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-15.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Ambientada 1</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-16.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Ambientada 2</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-17.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Ambientada 3</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-18.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Farol</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais 4 thumbnails aqui -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Thumbnails 1-6 -->
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-19.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Roda</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-20.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Sensing</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-21.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - HSA</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-22.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - TPMS</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-23.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - VSA</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="thumbnail-container">
+                                        <img src="img/modelos/galeria_cityHB2025/galeria/gallery-city-24.webp"
+                                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="d-none thumbnail-caption">
+                                            <p class="mb-0">
+                                                <b>New City Hatchback - Função Smart Entry</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controles de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#thumbnailCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#thumbnailCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/civic-advanced-hybrid" class="text-center"> <img
-                                src="img/modelos/civic-2025.png" width="167" height="95" class="modelo-hover d-block m-auto"
-                                alt="Modelo Civic Advanced Hybrid">
-                            <div class="modelo-logo"> <img src="img/logos/logo-civic-adv-hybrid.svg"
-                                    class="d-block m-auto" alt="Civic Advanced Hybrid"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 265.900,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/civic-advanced-hybrid"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+        </div>
+    </section>
+
+    <section id="hondaSensingCity" class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img src="img/logos/honda-sensing.png" class="d-block mb-3" alt="Honda Sensing">
+
+                    <h2 class="h1estilo text-start color-gray" style="text-transform: initial;">O melhor da
+                        segurança, <b>tecnologia e assistência ao condutor</b></h2>
+
                 </div>
-
-
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/accord-hibrido" class="text-center"> <img
-                                src="img/modelos/accord.webp" width="167" class="modelo-hover d-block m-auto"
-                                alt="Accord Advanced Híbrido">
-                            <div class="modelo-logo"> <img src="img/logos/accord-adv-hyb.png" class="d-block m-auto"
-                                    alt="Accord Advanced Híbrido"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 332.400,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/accord-hibrido"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="versao-box">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="acc-tab" data-bs-toggle="tab" data-bs-target="#acc"
+                                    type="button" role="tab" aria-controls="acc" aria-selected="true">
+                                    ACC
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="lkas-tab" data-bs-toggle="tab" data-bs-target="#lkas"
+                                    type="button" role="tab" aria-controls="lkas" aria-selected="false">
+                                    LKAS
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cmbs-tab" data-bs-toggle="tab" data-bs-target="#cmbs"
+                                    type="button" role="tab" aria-controls="cmbs" aria-selected="false">
+                                    CMBS
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="rdm-tab" data-bs-toggle="tab" data-bs-target="#rdm"
+                                    type="button" role="tab" aria-controls="rdm" aria-selected="false">
+                                    RDM
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ahb-tab" data-bs-toggle="tab" data-bs-target="#ahb"
+                                    type="button" role="tab" aria-controls="ahb" aria-selected="false">
+                                    AHB
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active p-3" id="acc" role="tabpanel"
+                                aria-labelledby="acc-tab">
+                                <h3 class="color-red mb-4">ACC - Controle de cruzeiro adaptativo</h3>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-sm-12 col-md-7 col-lg-7">
+                                        <div class="video-container mb-3">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/Bb3LHqTBjSU?si=CmvMnDov7te9Er-T"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <p>
+                                            Sistema que auxilia o motorista a manter uma distância segura em relação ao
+                                            veículo detectado a sua frente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-3" id="lkas" role="tabpanel" aria-labelledby="lkas-tab">
+                                <h3 class="color-red mb-4">LKAS - Sistema de permanência de faixa</h3>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-sm-12 col-md-7 col-lg-7">
+                                        <div class="video-container mb-3">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/sD9Ob4QuCLo?si=7MbJWeF3KPqXEuId"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <p>Sistema que detecta as faixas de rodagem e ajusta a direção com o
+                                            objetivo de auxiliar o motorista a manter o veículo centralizado nas
+                                            linhas de marcação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-3" id="cmbs" role="tabpanel" aria-labelledby="cmbs-tab">
+                                <h3 class="color-red mb-4">CMBS - Sistema de frenagem para mitigação de colisão</h3>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-sm-12 col-md-7 col-lg-7">
+                                        <div class="video-container mb-3">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/6p4fiFkXUIg?si=MGg9v3bhjKj3vj0k"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <p>Sistema de acionamento de freios do Novo Honda City Hatch que detecta uma
+                                            possível colisão frontal com o objetivo de mitigar acidentes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-3" id="rdm" role="tabpanel" aria-labelledby="rdm-tab">
+                                <h3 class="color-red mb-4">RDM - Sistema para mitigação de evasão de pista</h3>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-sm-12 col-md-7 col-lg-7">
+                                        <div class="video-container mb-3">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/EbGvioMwgTw?si=87AXJguKavXJ3ooF"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <p>Sistema que detecta a saída da pista e ajusta a direção com o objetivo de
+                                            evitar a sua evasão e possíveis acidentes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-3" id="ahb" role="tabpanel" aria-labelledby="ahb-tab">
+                                <h3 class="color-red mb-4">AHB - Ajuste automático de farol</h3>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-sm-12 col-md-7 col-lg-7">
+                                        <div class="video-container mb-3">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/fJGpA9P8x30?si=h_b7lANNbA3jruFq"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5 col-lg-5">
+                                        <p>Sistema de assistência automática de farol alto e baixo, que se ajusta de
+                                            acordo com a situação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/hrv-touring" class="text-center"> <img
-                                src="img/modelos/newhrv.png" width="167" height="95" class="modelo-hover d-block m-auto" alt="Modelo HR-V">
-                            <div class="modelo-logo"> <img src="img/logos/hrv_logo.png?v=1" class="d-block m-auto"
-                                    alt="Logo HR-V"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 163.200,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/new-hrv-touring"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
+    <section id="modeloFichatecnica" class="py-5">
+        <div class="container">
+            <h2 class="h1estilo mb-5">Ficha <b>Técnica</b></h2>
+
+            <div class="ficha-tecnica">
+                <ul class="nav nav-pills flex-column nav-pill" id="pillsFicha-01-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold active position-relative" id="pillsFicha-01-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-01" type="button" role="tab"
+                            aria-controls="pills-home" aria-selected="true">
+                            <img src="img/icons/gauge-solid.svg" class="me-2" alt="Ícone para Desempenho">
+                            Desempenho
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-02-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-02" type="button" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">
+                            <img src="img/icons/maximize-solid.svg" class="me-2" alt="Ícone para Dimensões">
+                            Dimensões
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-03-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-03" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/shield.svg" class="me-2" alt="Ícone para Segurança">
+                            Segurança
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-04-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-04" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/honda-sensing.svg" class="me-2" alt="Ícone para Honda SENSING">
+                            Honda SENSING
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-05-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-05" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/car.svg" class="me-2" alt="Ícone para Acabamento Exterior">
+                            Acabamento Exterior
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-06-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-06" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/chair.svg" class="me-2" alt="Ícone para Conforto e Tecnologia">
+                            Conforto e Tecnologia
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-07-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-07" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/gear.svg" class="me-2" alt="Ícone para Consumo">
+                            Consumo
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold position-relative" id="pillsFicha-08-tab"
+                            data-bs-toggle="pill" data-bs-target="#pillficha-08" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">
+                            <img src="img/icons/droplet-solid.svg" class="me-2" alt="Ícone para Cores">
+                            Cores
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 w-100" id="pillsFicha-tabContent">
+                    <div class="tab-pane fade show active" id="pillficha-01" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Desempenho</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Motor em Alumínio 1.5L DOHC VTEC com Injeção Direta</li>
+                                    <li>Potência (Gasolina - Etanol) 126 cv / 6200 rpm</li>
+                                    <li>Torque (Etanol) 15,8 kgf.m / 4600 rpm (E)</li>
+                                    <li>Torque (Gasolina) 15,5 kgf.m / 4600 rpm (G)</li>
+                                    <li>Transmissão automática do tipo CVT com Paddle Shifts</li>
+                                    <li>Tração dianteira</li>
+                                    <li>Suspensão dianteira MacPherson</li>
+                                    <li>Suspensão traseira Barra de torção</li>
+                                    <li>Rodas Liga leve - aro 16''</li>
+                                    <li>Pneus 185/55R16</li>
+                                    <li>Disco de freio traseiro</li>
+                                    <li>Estepe temporário T135 / 80 D15</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-02" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Dimensões</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Distância entre eixos (mm) 2.600</li>
+                                    <li>Comprimento (mm) 4.343</li>
+                                    <li>Altura (mm) 1.498</li>
+                                    <li>Largura (mm) 1.748</li>
+                                    <li>Peso bruto total (kg) 1.184</li>
+                                    <li>Volume porta-malas (litros) 268</li>
+                                    <li>Tanque de combustível (litros) 39,5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-03" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Segurança</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Estrutura de deformação progressiva ACE (Advanced Compatibility Engineering)
+                                    </li>
+                                    <li>Alarme de segurança com imobilizador ECU </li>
+                                    <li>Freios com sistemas ABS e EBD - Sistema de Freio Antibloqueio / Distribuição
+                                        Eletrônica de Freio</li>
+                                    <li>EBA (Emergency Brake Assist) - Assistente de frenagem de emergência</li>
+                                    <li>Freio de estacionamento eletrônico com função Brake Hold</li>
+                                    <li>Sistema VSA (Vehicle Stability Assist) - Assistente de estabilidade e tração
+                                    </li>
+                                    <li>HSA (Hill-start Assist) - Assistente de partidas em rampas</li>
+                                    <li>ESS (Emergency Stop Signal) - Sistema de luzes de emergência</li>
+                                    <li>TPMS (Tire Pressure Monitoring System) - Alerta de pressão dos pneus</li>
+                                    <li>Airbags frontais, laterais e de cortina (6 airbags)</li>
+                                    <li>Cinto de segurança de 3 pontos e encosto de cabeça para todos os ocupantes </li>
+                                    <li>Cinto de segurança dianteiro com sistema de tensionamento</li>
+                                    <li>Lembrete de afivelamento dos cintos dianteiros e traseiros</li>
+                                    <li>Trava infantil nas portas traseiras </li>
+                                    <li>Sistema ISOFIX de fixação para cadeirinhas infantis</li>
+                                    <li>Câmera de ré de alta resolução multivisão (três vistas) e linhas dinâmicas</li>
+                                    <li>Honda LaneWatch - Assistente para redução de ponto cego</li>
+                                    <li>
+                                        <a href="https://www.honda.com.br/automoveis/sites/hab/files/2021-12/Adesivo%20TOURING.jpg_.pdf"
+                                            target="_blank" download="">
+                                            <strong>Baixe aqui</strong>
+                                        </a> a etiqueta de rotulagem veicular de segurança
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-04" role="tabpanel">
+                        <div class="p-3">
+                            <img src="img/logos/honda-sensing.png" class="mb-4" alt="Honda Sensing">
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Honda SENSING </li>
+                                    <li>ACC (Adaptive Cruise Control) com LSF (Low Speed Follow) - Sistema que
+                                        auxilia o motorista a manter uma distância segura em relação ao veículo
+                                        detectado à sua frente.</li>
+                                    <li>CMBS (Collision Mitigation Braking System) - Sistema de acionamento de
+                                        freios ao detectar uma possível colisão frontal com o objetivo de mitigar
+                                        acidentes.</li>
+                                    <li>LKAS (Lane Keeping Assist System) - Sistema que detecta as faixas de
+                                        rodagem e ajusta a direção com o objetivo de auxiliar o motorista a manter o
+                                        veículo centralizado nas linhas de
+                                        marcação.</li>
+                                    <li>RDM (Road Departure Mitigation System) - Sistema que detecta a saída da
+                                        pista e ajusta a direção com o objetivo de evitar a sua evasão e possíveis
+                                        acidentes.</li>
+                                    <li>AHB (Auto High Beam) - Sistema de assistência automática de farol alto, que
+                                        se ajusta de acordo com a situação.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-05" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Acabamento Exterior</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Lanternas traseiras em LED </li>
+                                    <li>Luz de placa em LED </li>
+                                    <li>Antena tipo Tubarão</li>
+                                    <li>Limpador de para-brisa com função intermitente com ajuste de velocidade e sensor
+                                        de chuva</li>
+                                    <li>Espelhos retrovisores na cor do veículo com indicadores em LED com rebatimento
+                                        automático</li>
+                                    <li>Conjunto óptico com DRL em LED (Luzes de Rodagem Diurna)</li>
+                                    <li>Faróis com acendimento automático (sensor crepuscular) Full LED</li>
+                                    <li>Faróis de neblina em LED</li>
+                                    <li>Acabamento das rodas em verniz escurecido, diamantado e fundo preto</li>
+                                    <li>Chave com função Smart Entry de travamento e destravamento das portas e do
+                                        porta-malas por sensor de aproximação
+                                        e partida com controle remoto</li>
+                                    <li>Abertura e fechamento dos vidros pela chave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-06" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Conforto e Tecnologia</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Sensores de estacionamento com aviso sonoro Dianteiros e Traseiros</li>
+                                    <li>Carregador sem fio para smartphones</li>
+                                    <li>Portas USB - 2 Entradas dianteiras tipo A + 2 Entradas traseiras tipo C</li>
+                                    <li>Botão de travamento das portas (motorista e passageiro) com travamento
+                                        automático de velocidade</li>
+                                    <li>Vidros elétricos com a função de subida automática dos vidros com "um toque" em
+                                        todas as portas com anti
+                                        esmagamento</li>
+                                    <li>Alavanca de seta com One-Touch (pisca três vezes com um toque)</li>
+                                    <li>Coluna de direção com ajuste de altura e profundidade</li>
+                                    <li>Banco traseiro com apoio de braço central e porta-copos</li>
+                                    <li>Porta-revistas no banco passageiro e motorista</li>
+                                    <li>Desligamento automático dos fárois após 15 segundos</li>
+                                    <li>Tomada 12 Volts dianteira</li>
+                                    <li>Jogo de tapetes com trava antiescorregamento (carpete)</li>
+                                    <li>Espelhos no quebra sol (motorista e passageiro)</li>
+                                    <li>Ar-condicionado Digital Dual Zone automático com ventilação para os ocupantes
+                                        traseiros</li>
+                                    <li>Botão de partida do motor (START/STOP)</li>
+                                    <li>Banco traseiro Bipartido (60/40) Com exclusiva tecnologia Magic Seat</li>
+                                    <li>Volante e alavanca do câmbio revestidos em couro* *Alguns itens são revestidos
+                                        em couro e /ou materiais sintéticos de alta qualidade</li>
+                                    <li>Revestimento dos bancos de couro na cor Preta</li>
+                                    <li>Revestimento do apoio do braço em couro</li>
+                                    <li>Bancos com Estabilizador Corporal - Maior conforto e ergonomia</li>
+                                    <li>8 Alto-falantes</li>
+                                    <li>Multimídia 8” touchscreen com interface sem fio para smartphones com Apple
+                                        CarPlay e Android Auto™</li>
+                                    <li>Seleção de modo de condução: ECON</li>
+                                    <li>Controle de áudio no volante</li>
+                                    <li>Painel digital TFT 7" de alta resolução (Thin-Film Transistor)</li>
+                                    <li>myHonda Connect - Conexão única entre você e o seu Honda</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-07" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Consumo</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Consumo de combustível - Cidade (km/l) – Etanol 9,2</li>
+                                    <li>Consumo de combustível - Cidade (km/l) -Gasolina – 13,2</li>
+                                    <li>Consumo de combustível - Estrada (km/l) - Etanol 10,5</li>
+                                    <li>Consumo de combustível - Estrada (km/l) - Gasolina – 15,0</li>
+                                    <li>Consumo de combustível - Classificação Categoria (km/l) A</li>
+                                    <li>Consumo de combustível - Classificação Geral (km/l) C</li>
+                                    <li>Nível de emissões A</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pillficha-08" role="tabpanel">
+                        <div class="p-3">
+                            <h3 class="color-red">Cores</h3>
+                            <div class="ficha-list ps-0">
+                                <ul class="list-striped list-dots">
+                                    <li>Branco Tafetá Sólido</li>
+                                    <li>Branco Topázio Perolizado</li>
+                                    <li>Preto Cristal Perolizado</li>
+                                    <li>Prata Platinum Metálico</li>
+                                    <li>Azul Cósmico Metálico</li>
+                                    <li>Cinza Basalto Metálico</li>
+                                    <li>Cinza Grafeno Perolizado</li>
+                                    <li>Vermelho Mercúrio Perolizado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/zrv-touring" class="text-center"> <img
-                                src="img/modelos/zrv.webp" width="167" class="modelo-hover d-block m-auto"
-                                alt="Modelo ZR-V">
-                            <div class="modelo-logo"> <img src="img/logos/zrv-logo.png" class="d-block m-auto"
-                                    alt="ZR-V"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 214.500,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/zrv-touring"> <i class="fa-solid fa-plus me-2"></i>
-                        Saiba Mais </a>
+        </div>
+
+        <div class="container">
+            <div class="row mt-3">
+                <p>
+                    <small>
+                        A Honda Automóveis do Brasil reserva-se o direito de modificar equipamentos,
+                        especificações técnicas, preços ou cores sem prévia notificação. Garantia de 3 anos sem limite
+                        de quilometragem
+                        válida na rede de concessionárias Honda. Preço público sugerido em reais, com frete incluso,
+                        podendo variar de
+                        acordo com a tributação e alíquotas específicas de cada Estado (consulte uma concessionária para
+                        mais
+                        informações). Alguns itens são revestidos em couro e/ou materiais sintéticos de alta qualidade.
+                        *Apple CarPlay é
+                        uma marca comercial da Apple Inc. Android Auto é uma marca comercial da Google Inc.<br>
+                        *As informações desta página se referem ao modelo New City Hatchback. Consulte uma
+                        concessionária Honda para
+                        saber a respeito da disponibilidade do produto ou esclarecimento de dúvidas. Enfatizamos que a
+                        negociação,
+                        reserva, venda e entrega de nossos veículos 0km é realizada exclusivamente pela rede de
+                        concessionárias
+                        autorizadas.
+                    </small>
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="selosPremios" class="py-5">
+        <div class="container">
+            <div class="row">
+                <h1 class="h1estilo mb-5">Selos e <b>Prêmios</b></h1>
+
+                <div id="carouselSelos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="img/modelos/galeria_cityHB2025/selos/Selo_CompraDoAno_2025_MotorShow_2.webp"
+                                width="200" class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Compra do Ano 2025 – Motor Show</h5>
+                                <p class="text-center">
+                                    Premiado na categoria Hatch Compacto pela segunda vez.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/selo-12.webp" width="200"
+                                class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Compra do Ano 2023 – Motor Show</h5>
+                                <p class="text-center">
+                                    Prêmio Compra do Ano 2023 na categoria Hatch Compacto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/selo-11.webp" width="200"
+                                class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Os Melhores do Setor Automotivo - AutoData</h5>
+                                <p class="text-center">
+                                    Família Honda City: Vencedor na categoria Veículo Automóvel
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/Hatch.png" width="200"
+                                class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Prêmio Uol Carros 2022</h5>
+                                <p class="text-center">
+                                    1° Lugar – Categoria Melhor Hatchback
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/Selos_0002_2-lugar-150k.png" width="200"
+                                class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Melhor Compra Quatro Rodas</h5>
+                                <p class="text-center">O 2° lugar no prêmio de Melhor Compra entre os Hatchbacks até 150
+                                    mil reais é do Honda City Hatchback.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/logo_assistencia_24horas_psd_150dpi.png"
+                                width="200" class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Assistência 24h</h5>
+                                <p class="text-center">
+                                    A Honda Automóveis do Brasil oferece, por um prazo de 2 anos a partir da Nota Fiscal
+                                    de Vendas do veículo zero, o serviço de Assistência 24 horas, do qual poderá dispor,
+                                    em caso de acidente, furto, roubo ou pane (de origem elétrica ou mecânica), com
+                                    cobertura em qualquer parte do Brasil, Argentina, Uruguai ou Paraguai.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/modelos/galeria_cityHB2025/selos/Garantia_3anos.png" width="200"
+                                class="d-block m-auto mb-3" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-center">Garantia de Fábrica</h5>
+                                <p class="text-center">
+                                    A Honda Automóveis do Brasil Ltda. garante que seus veículos distribuídos sob a sua
+                                    licença pelas Concessionárias Autorizadas Honda, estão de acordo com os termos
+                                    estabelecidos, desde que, não ocorram quaisquer dos fatos relacionados como
+                                    excludentes (Concessão da Garantia, itens não cobertos pela Garantia e Extinção da
+                                    Garantia). A garantia é concebida para o primeiro e demais (subsequentes)
+                                    proprietários enquanto o período pré-estabelecido perdurar. Essa garantia tem
+                                    validade de 3 anos sem limite de quilometragem desde que sejam realizadas as
+                                    revisões programadas na Rede Autorizada Honda, conforme descrito nos termos de
+                                    Garantia contidos no Manual do Proprietário.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSelos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSelos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/crv-advanced-hybrid" class="text-center"> <img
-                                src="img/modelos/crv/crv.webp" width="167" class="modelo-hover d-block m-auto"
-                                alt="CR-V Advanced Hybrid">
-                            <div class="modelo-logo"> <img src="img/logos/crv-logo.png" class="d-block m-auto"
-                                    alt="CR-V"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 352.900,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="/crv-advanced-hybrid"> <i
-                            class="fa-solid fa-plus me-2"></i> Saiba Mais </a>
-                </div>
+    <div id="emailPecaUmaCotacao"></div>
+    <script src="/vuejs/emailPecaUmaCotacao.js?v=1"></script>
+</main>
 
-
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="d-block my-3"> <a href="/civic-type-r" class="text-center"> <img
-                                src="img/modelos/type_r.png" class="modelo-hover d-block m-auto"
-                                alt="Modelo Civic Type R">
-                            <div class="modelo-logo"> <img src="img/logos/civi-typeR-200x80.png" class="d-block m-auto"
-                                    alt="Civic Híbrido"> </div>
-                        </a> </div>
-                    <p class="text-center mb-1"> A partir de </p>
-                    <p class="preco text-center"> R$ 429.900,00 </p>
-                    <a class="btn btn-primary d-block m-auto" href="civic-type-r"> <i class="fa-solid fa-plus me-2"></i>
-                        Saiba Mais </a>
-                </div>
-
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-galeria">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" class="img-fluid mb-3" id="modalImage">
+                <div id="modalCaption"></div>
             </div>
         </div>
     </div>
-</section>
-<div id="emailHome"></div>
-<script src="/vuejs/emailHome.js"></script>
-<section id="testDrive"> <img id="testDrive-capa" src="/img/test-drive-mob.webp" alt="">
-    <div class="container">
-        <div class="py-5">
-            <h1>Agende seu <b>Test Drive</b></h1>
-            <h2 class="mb-3">Viva a experiência de dirigir um Honda!</h2>
-            <a href="/testdrive" class="btn btn-primary"> Agende aqui </a>
-        </div>
-    </div>
-</section>
-<section id="servicos">
-    <div class="container">
-        <div class="row my-4 servicos-row">
-            <div class="col-sm-12 col-md-6 col-lg-6"> <img src="/img/home-agenda.webp" class="w-100" alt=""> </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2>Faça o seu agendamento</h2>
-                <p>A <b>Revisão Programada Daitan</b> oferece o melhor serviço para o seu Honda. Agende sua revisão,
-                    escolha a data e horário que preferir, e deixe seu carro na oficina sem demora. Nossos consultores
-                    técnicos estarão prontos para atendê-lo, enquanto você desfruta de um cafezinho.</p>
-                <p>Se tiver alguma dúvida ou precisar reagendar, entre em contato com a nossa <a
-                        href="/agenda-facil">Central de Agendamento</a> da sua região.</p>
-                <div class="nav-btn my-4">
-                    <button class="btn btn-primary" onClick="location.href='/agenda-facil'"> <i
-                            class="fa-solid fa-calendar me-2"></i> Agende aqui </button>
-                    <button id="tel" class="btn btn-outline-primary" onClick="location.href='tel:+551147656800'"> <i class="fa-brands fa-whatsapp"></i> 11 4765-6800 </button>
-                    <button id="whats" class="btn btn-whatsapp" onClick="location.href='https://wa.me/551147656800'"> <i
-                            class="fa-brands fa-whatsapp me-2"></i> 11 4765-6800 </button>
-                </div>
+</div>
+
+<script>
+    // Atualiza o modal com a imagem e o caption corretos
+    $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
+        var imageSrc = $(this).attr('src');
+        var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
+
+        $('#modalImage').attr('src', imageSrc);
+        $('#modalCaption').html(captionHTML);
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-galeria">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-        <div id="confiraSeminovos"></div>
-        <script src="/vuejs/HomeConfiraSeminovos.js?v=1.2"></script>
-    </div>
-</section>
-<section id="acessorios" class="py-5">
-    <div class="container">
-        <div class="row equal-height-cards">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card w-100 equal-height-card">
-                    <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Consórcio nacional Honda
-                    </div>
-                    <img src="/img/access-consorcio.webp" class="w-100" alt="...">
-                    <div class="card-body">
-                        <p>Planos do Consórcio Nacional Honda não têm juros, entradas ou taxa de adesão.</p>
-                        <a href="/consorcio" class="btn btn-outline-primary"> <i class="fa-solid fa-plus me-2"></i> Mais
-                            informações </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card w-100 equal-height-card">
-                    <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Honda Access </div>
-                    <img src="/img/access-access.webp" class="w-100" alt="...">
-                    <div class="card-body">
-                        <p>Conheça o catálogo de acessórios e produtos especiais para deixar o seu Honda do seu jeito.
-                        </p>
-                        <a href="/pecas-e-acessorios" class="btn btn-outline-primary"> <i
-                                class="fa-solid fa-plus me-2"></i> Mais informações </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card w-100 equal-height-card">
-                    <div class="card-header"> <img src="/img/triangle.svg" class="me-2" alt=""> Vendas especiais </div>
-                    <img src="/img/access-conduz.webp" class="w-100" alt="...">
-                    <div class="card-body">
-                        <p>A Honda valoriza a inclusão de pessoas com deficiência, promovendo mobilidade e respeito à
-                            diversidade em suas ações.</p>
-                        <a href="/hondaconduz" class="btn btn-outline-primary"> <i class="fa-solid fa-plus me-2"></i>
-                            Mais informações </a>
-                    </div>
-                </div>
+            <div class="modal-body">
+                <img src="" class="img-fluid mb-3" id="modalImage">
+                <div id="modalCaption"></div>
             </div>
         </div>
     </div>
-</section>
+</div>
+
+<script>
+    // Atualiza o modal com a imagem e o caption corretos
+    $('#thumbnailCarousel').on('click', '.img-thumbnail', function () {
+        var imageSrc = $(this).attr('src');
+        var captionHTML = $(this).closest('.thumbnail-container').find('.thumbnail-caption').html();
+
+        $('#modalImage').attr('src', imageSrc);
+        $('#modalCaption').html(captionHTML);
+    });
+</script>
